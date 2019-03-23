@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+	<TemplateData>
+		<Name>Eleven N-Layered DSL + Ado.Net</Name>
+		<Description>Eleven n-layered domain-oriented architecture project template using DSL tools and Ado.Net</Description>
+		<Icon>Eleven.VS.ico</Icon>
+		<ProjectType>CSharp</ProjectType>
+		<RequiredFrameworkVersion>4.0</RequiredFrameworkVersion>
+		<SortOrder>1001</SortOrder>
+		<TemplateID>AC6FEB78-5C1A-4BAD-AEBA-AEA62685011E</TemplateID>
+		<CreateNewFolder>false</CreateNewFolder>
+		<DefaultName>Company.Module</DefaultName>
+		<ProvideDefaultName>true</ProvideDefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectCollection>
+			<SolutionFolder Name="$a_solutionfoldermodeling$" CreateOnDisk="false">
+			</SolutionFolder>
+			<SolutionFolder Name="$a_solutionfoldermodeling$" CreateOnDisk="false">
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Modeling.Model">
+          Modeling.Model\Modeling.Model.vstemplate
+        </ProjectTemplateLink>
+			</SolutionFolder>
+      <SolutionFolder Name="$b_solutionfolder_layers$" CreateOnDisk="false">
+        <SolutionFolder Name="$b_solutionfolder_layers_1_presentation$" CreateOnDisk="false">
+          <SolutionFolder Name="$b_solutionfolder_layers_1_presentation_1_mobile$" CreateOnDisk="false">
+            <SolutionFolder Name="$b_solutionfolder_layers_1_presentation_1_mobile_1_android$" CreateOnDisk="false">
+            </SolutionFolder>
+            <SolutionFolder Name="$b_solutionfolder_layers_1_presentation_1_mobile_2_windowsphone$" CreateOnDisk="false">
+            </SolutionFolder>
+          </SolutionFolder>
+          <SolutionFolder Name="$b_solutionfolder_layers_1_presentation_2_ria$" CreateOnDisk="false">
+            <SolutionFolder Name="$b_solutionfolder_layers_1_presentation_2_ria_1_silverlightclient$" CreateOnDisk="false">
+            </SolutionFolder>
+            <SolutionFolder Name="$b_solutionfolder_layers_1_presentation_2_ria_2_silverlightmobile$" CreateOnDisk="false">
+            </SolutionFolder>
+          </SolutionFolder>
+          <SolutionFolder Name="$b_solutionfolder_layers_1_presentation_3_web$" CreateOnDisk="false">
+            <SolutionFolder Name="$b_solutionfolder_layers_1_presentation_3_web_1_aspnetcient$" CreateOnDisk="false">
+            </SolutionFolder>
+            <SolutionFolder Name="$b_solutionfolder_layers_1_presentation_3_web_2_aspnetmvccient$" CreateOnDisk="false">
+            </SolutionFolder>
+          </SolutionFolder>
+          <SolutionFolder Name="$b_solutionfolder_layers_1_presentation_4_windows$" CreateOnDisk="false">
+            <SolutionFolder Name="$b_solutionfolder_layers_1_presentation_4_windows_1_obaclient$" CreateOnDisk="false">
+            </SolutionFolder>
+            <SolutionFolder Name="$b_solutionfolder_layers_1_presentation_4_windows_2_winformclient$" CreateOnDisk="false">
+            </SolutionFolder>
+            <SolutionFolder Name="$b_solutionfolder_layers_1_presentation_4_windows_3_wpfclient$" CreateOnDisk="false">
+            </SolutionFolder>
+          </SolutionFolder>
+        </SolutionFolder>
+        <SolutionFolder Name="$b_solutionfolder_layers_2_distributedservices$" CreateOnDisk="false">
+          <SolutionFolder Name="$b_solutionfolder_layers_2_distributedservices_1_core$" CreateOnDisk="false">
+            <ProjectTemplateLink ProjectName="$safeprojectname$.DistributedServices.Core">
+              DistributedServices.Core\DistributedServices.Core.vstemplate
+            </ProjectTemplateLink>
+          </SolutionFolder>
+          <SolutionFolder Name="$b_solutionfolder_layers_2_distributedservices_2_mainmodule$" CreateOnDisk="false">
+            <ProjectTemplateLink ProjectName="$safeprojectname$.DistributedServices.MainModule">
+              DistributedServices.MainModule\DistributedServices.MainModule.vstemplate
+            </ProjectTemplateLink>
+          </SolutionFolder>
+          <SolutionFolder Name="$b_solutionfolder_layers_2_distributedservices_3_deployment$" CreateOnDisk="false">
+          </SolutionFolder>
+        </SolutionFolder>
+        <SolutionFolder Name="$b_solutionfolder_layers_3_application$" CreateOnDisk="false">
+          <SolutionFolder Name="$b_solutionfolder_layers_3_application_1_core$" CreateOnDisk="false">
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Application.Core">
+              Application.Core\Application.Core.vstemplate
+            </ProjectTemplateLink>
+          </SolutionFolder>
+          <SolutionFolder Name="$b_solutionfolder_layers_3_application_2_mainmodule$" CreateOnDisk="false">
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Application.MainModule">
+              Application.MainModule\Application.MainModule.vstemplate
+            </ProjectTemplateLink>
+          </SolutionFolder>
+        </SolutionFolder>
+        <SolutionFolder Name="$b_solutionfolder_layers_4_domain$" CreateOnDisk="false">
+          <SolutionFolder Name="$b_solutionfolder_layers_4_domain_1_core$" CreateOnDisk="false">
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Domain.Core">
+              Domain.Core\Domain.Core.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Domain.Core.Entities">
+              Domain.Core.Entities\Domain.Core.Entities.vstemplate
+            </ProjectTemplateLink>
+          </SolutionFolder>
+          <SolutionFolder Name="$b_solutionfolder_layers_4_domain_2_mainmodule$" CreateOnDisk="false">
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Domain.MainModule">
+              Domain.MainModule\Domain.MainModule.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Domain.MainModule.Entities">
+              Domain.MainModule.Entities\Domain.MainModule.Entities.vstemplate
+            </ProjectTemplateLink>
+          </SolutionFolder>
+        </SolutionFolder>
+        <SolutionFolder Name="$b_solutionfolder_layers_5_infraestructure$" CreateOnDisk="false">
+          <SolutionFolder Name="$b_solutionfolder_layers_5_infraestructure_1_data$" CreateOnDisk="false">
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Data.Core">
+              Data.Core\Data.Core.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Data.MainModule">
+              Data.MainModule\Data.MainModule.vstemplate
+            </ProjectTemplateLink>
+          </SolutionFolder>
+          <SolutionFolder Name="$b_solutionfolder_layers_5_infraestructure_2_crosscutting$" CreateOnDisk="false">
+            <ProjectTemplateLink ProjectName="$safeprojectname$.CrossCutting.Common">
+              CrossCutting.Common\CrossCutting.Common.vstemplate
+            </ProjectTemplateLink>
+          </SolutionFolder>
+        </SolutionFolder>
+        <SolutionFolder Name="$c_solutionfolder_database$" CreateOnDisk="false">
+          <ProjectTemplateLink ProjectName="$safeprojectname$.DataBase.Implementation">
+            DataBase.Implementation\DataBase.Implementation.vstemplate
+          </ProjectTemplateLink>
+        </SolutionFolder>
+        <SolutionFolder Name="$d_solutionfolder_solutionitems$" CreateOnDisk="false">
+        </SolutionFolder>
+      </SolutionFolder>
+		</ProjectCollection>
+	</TemplateContent>
+	<WizardExtension>
+		<Assembly>Eleven.VS.Templates.Ado.Wizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e40fefd5c0ba409</Assembly>
+		<FullClassName>Eleven.VS.Templates.Ado.Wizard.TemplateWizard</FullClassName>
+	</WizardExtension>
+</VSTemplate>

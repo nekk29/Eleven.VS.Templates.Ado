@@ -1,0 +1,1039 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Eleven.VS.Templates.Ado.Dsl.ElevenEntityModelDomainModel.Description" xml:space="preserve">
+    <value>Eleven n-layered domain-oriented architecture project template using DSL tools and Ado.Net</value>
+    <comment>Description for DslLibrary &apos;ElevenEntityModel&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.ElevenEntityModelDomainModel.DisplayName" xml:space="preserve">
+    <value>Eleven.VS.Templates.Ado.Package</value>
+    <comment>DisplayName for DslLibrary &apos;ElevenEntityModel&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModel.Description" xml:space="preserve">
+    <value>Root element for entity model.</value>
+    <comment>Description for DomainClass &apos;DomainEntityModel&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModel.DisplayName" xml:space="preserve">
+    <value>Domain Entity Model</value>
+    <comment>DisplayName for DomainClass &apos;DomainEntityModel&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModel/ProjectImplementationDatabase.Description" xml:space="preserve">
+    <value>Especify the project to implement the database model.</value>
+    <comment>Description for DomainProperty &apos;ProjectImplementationDatabase&apos; on DomainClass &apos;DomainEntityModel&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModel/ProjectImplementationDatabase.DisplayName" xml:space="preserve">
+    <value>Project Implementation Database</value>
+    <comment>DisplayName for DomainProperty &apos;ProjectImplementationDatabase&apos; on DomainClass &apos;DomainEntityModel&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModel/ProjectImplementationDatabase.Category" xml:space="preserve">
+    <value>Database</value>
+    <comment>Category for DomainProperty &apos;ProjectImplementationDatabase&apos; on DomainClass &apos;DomainEntityModel&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModel/ProjectImplementationDataAccess.Description" xml:space="preserve">
+    <value>Especify the project to implement the data access objects.</value>
+    <comment>Description for DomainProperty &apos;ProjectImplementationDataAccess&apos; on DomainClass &apos;DomainEntityModel&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModel/ProjectImplementationDataAccess.DisplayName" xml:space="preserve">
+    <value>Project Implementation Data Access</value>
+    <comment>DisplayName for DomainProperty &apos;ProjectImplementationDataAccess&apos; on DomainClass &apos;DomainEntityModel&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModel/ProjectImplementationDataAccess.Category" xml:space="preserve">
+    <value>Repository &amp; Data Access</value>
+    <comment>Category for DomainProperty &apos;ProjectImplementationDataAccess&apos; on DomainClass &apos;DomainEntityModel&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModel/ProjectImplementationEntity.Description" xml:space="preserve">
+    <value>Especify the project to implement the entity objects.</value>
+    <comment>Description for DomainProperty &apos;ProjectImplementationEntity&apos; on DomainClass &apos;DomainEntityModel&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModel/ProjectImplementationEntity.DisplayName" xml:space="preserve">
+    <value>Project Implementation Entity</value>
+    <comment>DisplayName for DomainProperty &apos;ProjectImplementationEntity&apos; on DomainClass &apos;DomainEntityModel&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModel/ProjectImplementationEntity.Category" xml:space="preserve">
+    <value>Domain</value>
+    <comment>Category for DomainProperty &apos;ProjectImplementationEntity&apos; on DomainClass &apos;DomainEntityModel&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModel/ProjectImplementationDomain.Description" xml:space="preserve">
+    <value>Especify the project to implement the domain core objects.</value>
+    <comment>Description for DomainProperty &apos;ProjectImplementationDomain&apos; on DomainClass &apos;DomainEntityModel&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModel/ProjectImplementationDomain.DisplayName" xml:space="preserve">
+    <value>Project Implementation Domain</value>
+    <comment>DisplayName for DomainProperty &apos;ProjectImplementationDomain&apos; on DomainClass &apos;DomainEntityModel&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModel/ProjectImplementationDomain.Category" xml:space="preserve">
+    <value>Domain</value>
+    <comment>Category for DomainProperty &apos;ProjectImplementationDomain&apos; on DomainClass &apos;DomainEntityModel&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModel/ProjectImplementationDataAccessCore.Description" xml:space="preserve">
+    <value>Especify the project to implement the cross cutting objects.</value>
+    <comment>Description for DomainProperty &apos;ProjectImplementationDataAccessCore&apos; on DomainClass &apos;DomainEntityModel&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModel/ProjectImplementationDataAccessCore.DisplayName" xml:space="preserve">
+    <value>Project Implementation Data Access Core</value>
+    <comment>DisplayName for DomainProperty &apos;ProjectImplementationDataAccessCore&apos; on DomainClass &apos;DomainEntityModel&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModel/ProjectImplementationDataAccessCore.Category" xml:space="preserve">
+    <value>Repository &amp; Data Access</value>
+    <comment>Category for DomainProperty &apos;ProjectImplementationDataAccessCore&apos; on DomainClass &apos;DomainEntityModel&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModel/ProjectImplementationWeb.Description" xml:space="preserve">
+    <value>Especify the project to implement the web objects.</value>
+    <comment>Description for DomainProperty &apos;ProjectImplementationWeb&apos; on DomainClass &apos;DomainEntityModel&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModel/ProjectImplementationWeb.DisplayName" xml:space="preserve">
+    <value>Project Implementation Web</value>
+    <comment>DisplayName for DomainProperty &apos;ProjectImplementationWeb&apos; on DomainClass &apos;DomainEntityModel&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModel/ProjectImplementationWeb.Category" xml:space="preserve">
+    <value>Presentation</value>
+    <comment>Category for DomainProperty &apos;ProjectImplementationWeb&apos; on DomainClass &apos;DomainEntityModel&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntity.Description" xml:space="preserve">
+    <value>Represents a entity of the model.</value>
+    <comment>Description for DomainClass &apos;DomainEntity&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntity.DisplayName" xml:space="preserve">
+    <value>Domain Entity</value>
+    <comment>DisplayName for DomainClass &apos;DomainEntity&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntity/Name.Description" xml:space="preserve">
+    <value>Name of the domain entity.</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;DomainEntity&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntity/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;DomainEntity&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntity/Name.Category" xml:space="preserve">
+    <value>Definition</value>
+    <comment>Category for DomainProperty &apos;Name&apos; on DomainClass &apos;DomainEntity&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntity/AccessModifier.Description" xml:space="preserve">
+    <value>Access modifier of the domain entity.</value>
+    <comment>Description for DomainProperty &apos;AccessModifier&apos; on DomainClass &apos;DomainEntity&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntity/AccessModifier.DisplayName" xml:space="preserve">
+    <value>Access Modifier</value>
+    <comment>DisplayName for DomainProperty &apos;AccessModifier&apos; on DomainClass &apos;DomainEntity&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntity/AccessModifier.Category" xml:space="preserve">
+    <value>Definition</value>
+    <comment>Category for DomainProperty &apos;AccessModifier&apos; on DomainClass &apos;DomainEntity&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntity/DomainModule.Description" xml:space="preserve">
+    <value>Domain module name of the domain entity.</value>
+    <comment>Description for DomainProperty &apos;DomainModule&apos; on DomainClass &apos;DomainEntity&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntity/DomainModule.DisplayName" xml:space="preserve">
+    <value>Domain Module</value>
+    <comment>DisplayName for DomainProperty &apos;DomainModule&apos; on DomainClass &apos;DomainEntity&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntity/DomainModule.Category" xml:space="preserve">
+    <value>Definition</value>
+    <comment>Category for DomainProperty &apos;DomainModule&apos; on DomainClass &apos;DomainEntity&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntity/IsDataAccessMapping.Description" xml:space="preserve">
+    <value>Especify if the domain entity is mapping with a table in the database.</value>
+    <comment>Description for DomainProperty &apos;IsDataAccessMapping&apos; on DomainClass &apos;DomainEntity&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntity/IsDataAccessMapping.DisplayName" xml:space="preserve">
+    <value>Is Data Access Mapping</value>
+    <comment>DisplayName for DomainProperty &apos;IsDataAccessMapping&apos; on DomainClass &apos;DomainEntity&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntity/IsDataAccessMapping.Category" xml:space="preserve">
+    <value>Data Access</value>
+    <comment>Category for DomainProperty &apos;IsDataAccessMapping&apos; on DomainClass &apos;DomainEntity&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntity/DataAccessSchema.Description" xml:space="preserve">
+    <value>Name of the mapping table schema for the domain entity in the database.</value>
+    <comment>Description for DomainProperty &apos;DataAccessSchema&apos; on DomainClass &apos;DomainEntity&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntity/DataAccessSchema.DisplayName" xml:space="preserve">
+    <value>Data Access Schema</value>
+    <comment>DisplayName for DomainProperty &apos;DataAccessSchema&apos; on DomainClass &apos;DomainEntity&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntity/DataAccessSchema.Category" xml:space="preserve">
+    <value>Data Access</value>
+    <comment>Category for DomainProperty &apos;DataAccessSchema&apos; on DomainClass &apos;DomainEntity&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntity/DataAccessTable.Description" xml:space="preserve">
+    <value>Name of the mapping table for domain entity in the database.</value>
+    <comment>Description for DomainProperty &apos;DataAccessTable&apos; on DomainClass &apos;DomainEntity&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntity/DataAccessTable.DisplayName" xml:space="preserve">
+    <value>Data Access Table</value>
+    <comment>DisplayName for DomainProperty &apos;DataAccessTable&apos; on DomainClass &apos;DomainEntity&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntity/DataAccessTable.Category" xml:space="preserve">
+    <value>Data Access</value>
+    <comment>Category for DomainProperty &apos;DataAccessTable&apos; on DomainClass &apos;DomainEntity&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntity/IdDomainEntity.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.DomainEntity.Id Domain Entity</value>
+    <comment>Description for DomainProperty &apos;IdDomainEntity&apos; on DomainClass &apos;DomainEntity&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntity/IdDomainEntity.DisplayName" xml:space="preserve">
+    <value>Id Domain Entity</value>
+    <comment>DisplayName for DomainProperty &apos;IdDomainEntity&apos; on DomainClass &apos;DomainEntity&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty.Description" xml:space="preserve">
+    <value>Represents a domain entity property in the domain entity.</value>
+    <comment>Description for DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty.DisplayName" xml:space="preserve">
+    <value>Domain Entity Property</value>
+    <comment>DisplayName for DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/DomainEntityType.Description" xml:space="preserve">
+    <value>Domain entity type of the domain entity property.</value>
+    <comment>Description for DomainProperty &apos;DomainEntityType&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/DomainEntityType.DisplayName" xml:space="preserve">
+    <value>Domain Entity Type</value>
+    <comment>DisplayName for DomainProperty &apos;DomainEntityType&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/DomainEntityType.Category" xml:space="preserve">
+    <value>Definition</value>
+    <comment>Category for DomainProperty &apos;DomainEntityType&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/Name.Description" xml:space="preserve">
+    <value>Name of the domain entity property.</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/Name.Category" xml:space="preserve">
+    <value>Definition</value>
+    <comment>Category for DomainProperty &apos;Name&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/CollectionType.Description" xml:space="preserve">
+    <value>Collection type of the domain entity property.</value>
+    <comment>Description for DomainProperty &apos;CollectionType&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/CollectionType.DisplayName" xml:space="preserve">
+    <value>Collection Type</value>
+    <comment>DisplayName for DomainProperty &apos;CollectionType&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/CollectionType.Category" xml:space="preserve">
+    <value>Definition</value>
+    <comment>Category for DomainProperty &apos;CollectionType&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/IsReadOnly.Description" xml:space="preserve">
+    <value>Especify if the domain entity property is read only.</value>
+    <comment>Description for DomainProperty &apos;IsReadOnly&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/IsReadOnly.DisplayName" xml:space="preserve">
+    <value>Is Read Only</value>
+    <comment>DisplayName for DomainProperty &apos;IsReadOnly&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/IsReadOnly.Category" xml:space="preserve">
+    <value>Definition</value>
+    <comment>Category for DomainProperty &apos;IsReadOnly&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/AccessModifier.Description" xml:space="preserve">
+    <value>Access modifier of the domain entity property.</value>
+    <comment>Description for DomainProperty &apos;AccessModifier&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/AccessModifier.DisplayName" xml:space="preserve">
+    <value>Access Modifier</value>
+    <comment>DisplayName for DomainProperty &apos;AccessModifier&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/AccessModifier.Category" xml:space="preserve">
+    <value>Definition</value>
+    <comment>Category for DomainProperty &apos;AccessModifier&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/IdDomainEntityProperty.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty.Id Domain Entity Property</value>
+    <comment>Description for DomainProperty &apos;IdDomainEntityProperty&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/IdDomainEntityProperty.DisplayName" xml:space="preserve">
+    <value>Id Domain Entity Property</value>
+    <comment>DisplayName for DomainProperty &apos;IdDomainEntityProperty&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/IdDomainEntityReferencesTargetDomainEntities.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty.Id Domain Entity References Target Domain Entities</value>
+    <comment>Description for DomainProperty &apos;IdDomainEntityReferencesTargetDomainEntities&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/IdDomainEntityReferencesTargetDomainEntities.DisplayName" xml:space="preserve">
+    <value>Id Domain Entity References Target Domain Entities</value>
+    <comment>DisplayName for DomainProperty &apos;IdDomainEntityReferencesTargetDomainEntities&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/IdDomainEntity.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty.Id Domain Entity</value>
+    <comment>Description for DomainProperty &apos;IdDomainEntity&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/IdDomainEntity.DisplayName" xml:space="preserve">
+    <value>Id Domain Entity</value>
+    <comment>DisplayName for DomainProperty &apos;IdDomainEntity&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/IsGeneratedCollection.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty.Is Generated Collection</value>
+    <comment>Description for DomainProperty &apos;IsGeneratedCollection&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/IsGeneratedCollection.DisplayName" xml:space="preserve">
+    <value>Is Generated Collection</value>
+    <comment>DisplayName for DomainProperty &apos;IsGeneratedCollection&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/HasDomainType.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty.Has Domain Type</value>
+    <comment>Description for DomainProperty &apos;HasDomainType&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityProperty/HasDomainType.DisplayName" xml:space="preserve">
+    <value>Has Domain Type</value>
+    <comment>DisplayName for DomainProperty &apos;HasDomainType&apos; on DomainClass &apos;DomainEntityProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty.Description" xml:space="preserve">
+    <value>Represents a primitive property in the domain entity.</value>
+    <comment>Description for DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty.DisplayName" xml:space="preserve">
+    <value>Primitive Property</value>
+    <comment>DisplayName for DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/AccessModifier.Description" xml:space="preserve">
+    <value>Access modifier of the primitive property.</value>
+    <comment>Description for DomainProperty &apos;AccessModifier&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/AccessModifier.DisplayName" xml:space="preserve">
+    <value>Access Modifier</value>
+    <comment>DisplayName for DomainProperty &apos;AccessModifier&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/AccessModifier.Category" xml:space="preserve">
+    <value>Definition</value>
+    <comment>Category for DomainProperty &apos;AccessModifier&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/PrimitiveType.Description" xml:space="preserve">
+    <value>The primitive type of the primitive property.</value>
+    <comment>Description for DomainProperty &apos;PrimitiveType&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/PrimitiveType.DisplayName" xml:space="preserve">
+    <value>Primitive Type</value>
+    <comment>DisplayName for DomainProperty &apos;PrimitiveType&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/PrimitiveType.Category" xml:space="preserve">
+    <value>Definition</value>
+    <comment>Category for DomainProperty &apos;PrimitiveType&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/Name.Description" xml:space="preserve">
+    <value>Name of the primitive property.</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/Name.Category" xml:space="preserve">
+    <value>Definition</value>
+    <comment>Category for DomainProperty &apos;Name&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/CollectionType.Description" xml:space="preserve">
+    <value>Collection type of the primitive property.</value>
+    <comment>Description for DomainProperty &apos;CollectionType&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/CollectionType.DisplayName" xml:space="preserve">
+    <value>Collection Type</value>
+    <comment>DisplayName for DomainProperty &apos;CollectionType&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/CollectionType.Category" xml:space="preserve">
+    <value>Definition</value>
+    <comment>Category for DomainProperty &apos;CollectionType&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/IsReadOnly.Description" xml:space="preserve">
+    <value>Especify if the primitive property is read only.</value>
+    <comment>Description for DomainProperty &apos;IsReadOnly&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/IsReadOnly.DisplayName" xml:space="preserve">
+    <value>Is Read Only</value>
+    <comment>DisplayName for DomainProperty &apos;IsReadOnly&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/IsReadOnly.Category" xml:space="preserve">
+    <value>Definition</value>
+    <comment>Category for DomainProperty &apos;IsReadOnly&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/IsDataAccessMapping.Description" xml:space="preserve">
+    <value>Especify if the primitive property is mapping with a column table in the database.</value>
+    <comment>Description for DomainProperty &apos;IsDataAccessMapping&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/IsDataAccessMapping.DisplayName" xml:space="preserve">
+    <value>Is Data Access Mapping</value>
+    <comment>DisplayName for DomainProperty &apos;IsDataAccessMapping&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/IsDataAccessMapping.Category" xml:space="preserve">
+    <value>Data Access</value>
+    <comment>Category for DomainProperty &apos;IsDataAccessMapping&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/DataAccessColumn.Description" xml:space="preserve">
+    <value>Name of the mapping column table for the primitive property in the database.</value>
+    <comment>Description for DomainProperty &apos;DataAccessColumn&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/DataAccessColumn.DisplayName" xml:space="preserve">
+    <value>Data Access Column</value>
+    <comment>DisplayName for DomainProperty &apos;DataAccessColumn&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/DataAccessColumn.Category" xml:space="preserve">
+    <value>Data Access</value>
+    <comment>Category for DomainProperty &apos;DataAccessColumn&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/DataAccessType.Description" xml:space="preserve">
+    <value>Data type of the mapping column table for the primitive property in the database.</value>
+    <comment>Description for DomainProperty &apos;DataAccessType&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/DataAccessType.DisplayName" xml:space="preserve">
+    <value>Data Access Type</value>
+    <comment>DisplayName for DomainProperty &apos;DataAccessType&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/DataAccessType.Category" xml:space="preserve">
+    <value>Data Access</value>
+    <comment>Category for DomainProperty &apos;DataAccessType&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/IsPrimaryKey.Description" xml:space="preserve">
+    <value>Indicate if the the mapping column table for the primitive property in the database is the primary key.</value>
+    <comment>Description for DomainProperty &apos;IsPrimaryKey&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/IsPrimaryKey.DisplayName" xml:space="preserve">
+    <value>Is Primary Key</value>
+    <comment>DisplayName for DomainProperty &apos;IsPrimaryKey&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.PrimitiveProperty/IsPrimaryKey.Category" xml:space="preserve">
+    <value>Data Access</value>
+    <comment>Category for DomainProperty &apos;IsPrimaryKey&apos; on DomainClass &apos;PrimitiveProperty&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityCollection.Description" xml:space="preserve">
+    <value>Represents a entity collection in the model.</value>
+    <comment>Description for DomainClass &apos;DomainEntityCollection&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityCollection.DisplayName" xml:space="preserve">
+    <value>Domain Entity Collection</value>
+    <comment>DisplayName for DomainClass &apos;DomainEntityCollection&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityCollection/DomainModule.Description" xml:space="preserve">
+    <value>Domain module name of the entity collection.</value>
+    <comment>Description for DomainProperty &apos;DomainModule&apos; on DomainClass &apos;DomainEntityCollection&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityCollection/DomainModule.DisplayName" xml:space="preserve">
+    <value>Domain Module</value>
+    <comment>DisplayName for DomainProperty &apos;DomainModule&apos; on DomainClass &apos;DomainEntityCollection&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityCollection/DomainModule.Category" xml:space="preserve">
+    <value>Definition</value>
+    <comment>Category for DomainProperty &apos;DomainModule&apos; on DomainClass &apos;DomainEntityCollection&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityCollection/AccessModifier.Description" xml:space="preserve">
+    <value>Access modifier of the domain entity collection.</value>
+    <comment>Description for DomainProperty &apos;AccessModifier&apos; on DomainClass &apos;DomainEntityCollection&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityCollection/AccessModifier.DisplayName" xml:space="preserve">
+    <value>Access Modifier</value>
+    <comment>DisplayName for DomainProperty &apos;AccessModifier&apos; on DomainClass &apos;DomainEntityCollection&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityCollection/AccessModifier.Category" xml:space="preserve">
+    <value>Definition</value>
+    <comment>Category for DomainProperty &apos;AccessModifier&apos; on DomainClass &apos;DomainEntityCollection&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityCollection/Name.Description" xml:space="preserve">
+    <value>Name of the domain entity collection.</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;DomainEntityCollection&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityCollection/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;DomainEntityCollection&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityCollection/Name.Category" xml:space="preserve">
+    <value>Definition</value>
+    <comment>Category for DomainProperty &apos;Name&apos; on DomainClass &apos;DomainEntityCollection&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityCollection/CollectionType.Description" xml:space="preserve">
+    <value>Collection type of the domain entity collection.</value>
+    <comment>Description for DomainProperty &apos;CollectionType&apos; on DomainClass &apos;DomainEntityCollection&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityCollection/CollectionType.DisplayName" xml:space="preserve">
+    <value>Collection Type</value>
+    <comment>DisplayName for DomainProperty &apos;CollectionType&apos; on DomainClass &apos;DomainEntityCollection&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityCollection/CollectionType.Category" xml:space="preserve">
+    <value>Definition</value>
+    <comment>Category for DomainProperty &apos;CollectionType&apos; on DomainClass &apos;DomainEntityCollection&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityCollection/DomainEntityType.Description" xml:space="preserve">
+    <value>Domain entity type of the domain entity collection.</value>
+    <comment>Description for DomainProperty &apos;DomainEntityType&apos; on DomainClass &apos;DomainEntityCollection&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityCollection/DomainEntityType.DisplayName" xml:space="preserve">
+    <value>Domain Entity Type</value>
+    <comment>DisplayName for DomainProperty &apos;DomainEntityType&apos; on DomainClass &apos;DomainEntityCollection&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityCollection/DomainEntityType.Category" xml:space="preserve">
+    <value>Definition</value>
+    <comment>Category for DomainProperty &apos;DomainEntityType&apos; on DomainClass &apos;DomainEntityCollection&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityCollection/IdDomainEntityCollection.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.DomainEntityCollection.Id Domain Entity Collection</value>
+    <comment>Description for DomainProperty &apos;IdDomainEntityCollection&apos; on DomainClass &apos;DomainEntityCollection&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityCollection/IdDomainEntityCollection.DisplayName" xml:space="preserve">
+    <value>Id Domain Entity Collection</value>
+    <comment>DisplayName for DomainProperty &apos;IdDomainEntityCollection&apos; on DomainClass &apos;DomainEntityCollection&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityHasDomainEntityProperties.Description" xml:space="preserve">
+    <value>Embedding relationship between the Entity and EntityProperty</value>
+    <comment>Description for DomainClass &apos;DomainEntityHasDomainEntityProperties&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityHasDomainEntityProperties.DisplayName" xml:space="preserve">
+    <value>Domain Entity Has Domain Entity Properties</value>
+    <comment>DisplayName for DomainClass &apos;DomainEntityHasDomainEntityProperties&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityHasDomainEntityProperties/DomainEntity.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.DomainEntityHasDomainEntityProperties.DomainEntity</value>
+    <comment>Description for DomainRole &apos;DomainEntity&apos; on DomainRelationship &apos;DomainEntityHasDomainEntityProperties&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityHasDomainEntityProperties/DomainEntity.DisplayName" xml:space="preserve">
+    <value>Domain Entity</value>
+    <comment>DisplayName for DomainRole &apos;DomainEntity&apos; on DomainRelationship &apos;DomainEntityHasDomainEntityProperties&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityHasDomainEntityProperties/DomainEntity.PropertyDisplayName" xml:space="preserve">
+    <value>Domain Entity Properties</value>
+    <comment>PropertyDisplayName for DomainRole &apos;DomainEntity&apos; on DomainRelationship &apos;DomainEntityHasDomainEntityProperties&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityHasDomainEntityProperties/DomainEntityProperty.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.DomainEntityHasDomainEntityProperties.DomainEntityProperty</value>
+    <comment>Description for DomainRole &apos;DomainEntityProperty&apos; on DomainRelationship &apos;DomainEntityHasDomainEntityProperties&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityHasDomainEntityProperties/DomainEntityProperty.DisplayName" xml:space="preserve">
+    <value>Domain Entity Property</value>
+    <comment>DisplayName for DomainRole &apos;DomainEntityProperty&apos; on DomainRelationship &apos;DomainEntityHasDomainEntityProperties&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityHasDomainEntityProperties/DomainEntityProperty.PropertyDisplayName" xml:space="preserve">
+    <value>Domain Entity</value>
+    <comment>PropertyDisplayName for DomainRole &apos;DomainEntityProperty&apos; on DomainRelationship &apos;DomainEntityHasDomainEntityProperties&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityHasPrimitiveProperties.Description" xml:space="preserve">
+    <value>Embedding relationship between the Entity and PrimitiveProperty</value>
+    <comment>Description for DomainClass &apos;DomainEntityHasPrimitiveProperties&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityHasPrimitiveProperties.DisplayName" xml:space="preserve">
+    <value>Domain Entity Has Primitive Properties</value>
+    <comment>DisplayName for DomainClass &apos;DomainEntityHasPrimitiveProperties&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityHasPrimitiveProperties/DomainEntity.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.DomainEntityHasPrimitiveProperties.DomainEntity</value>
+    <comment>Description for DomainRole &apos;DomainEntity&apos; on DomainRelationship &apos;DomainEntityHasPrimitiveProperties&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityHasPrimitiveProperties/DomainEntity.DisplayName" xml:space="preserve">
+    <value>Domain Entity</value>
+    <comment>DisplayName for DomainRole &apos;DomainEntity&apos; on DomainRelationship &apos;DomainEntityHasPrimitiveProperties&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityHasPrimitiveProperties/DomainEntity.PropertyDisplayName" xml:space="preserve">
+    <value>Primitive Properties</value>
+    <comment>PropertyDisplayName for DomainRole &apos;DomainEntity&apos; on DomainRelationship &apos;DomainEntityHasPrimitiveProperties&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityHasPrimitiveProperties/PrimitiveProperty.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.DomainEntityHasPrimitiveProperties.PrimitiveProperty</value>
+    <comment>Description for DomainRole &apos;PrimitiveProperty&apos; on DomainRelationship &apos;DomainEntityHasPrimitiveProperties&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityHasPrimitiveProperties/PrimitiveProperty.DisplayName" xml:space="preserve">
+    <value>Primitive Property</value>
+    <comment>DisplayName for DomainRole &apos;PrimitiveProperty&apos; on DomainRelationship &apos;DomainEntityHasPrimitiveProperties&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityHasPrimitiveProperties/PrimitiveProperty.PropertyDisplayName" xml:space="preserve">
+    <value>Domain Entity</value>
+    <comment>PropertyDisplayName for DomainRole &apos;PrimitiveProperty&apos; on DomainRelationship &apos;DomainEntityHasPrimitiveProperties&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModelHasDomainEntities.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.DomainEntityModelHasDomainEntities</value>
+    <comment>Description for DomainClass &apos;DomainEntityModelHasDomainEntities&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModelHasDomainEntities.DisplayName" xml:space="preserve">
+    <value>Domain Entity Model Has Domain Entities</value>
+    <comment>DisplayName for DomainClass &apos;DomainEntityModelHasDomainEntities&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModelHasDomainEntities/DomainEntityModel.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.DomainEntityModelHasDomainEntities.DomainEntityModel</value>
+    <comment>Description for DomainRole &apos;DomainEntityModel&apos; on DomainRelationship &apos;DomainEntityModelHasDomainEntities&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModelHasDomainEntities/DomainEntityModel.DisplayName" xml:space="preserve">
+    <value>Domain Entity Model</value>
+    <comment>DisplayName for DomainRole &apos;DomainEntityModel&apos; on DomainRelationship &apos;DomainEntityModelHasDomainEntities&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModelHasDomainEntities/DomainEntityModel.PropertyDisplayName" xml:space="preserve">
+    <value>Domain Entities</value>
+    <comment>PropertyDisplayName for DomainRole &apos;DomainEntityModel&apos; on DomainRelationship &apos;DomainEntityModelHasDomainEntities&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModelHasDomainEntities/DomainEntity.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.DomainEntityModelHasDomainEntities.DomainEntity</value>
+    <comment>Description for DomainRole &apos;DomainEntity&apos; on DomainRelationship &apos;DomainEntityModelHasDomainEntities&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModelHasDomainEntities/DomainEntity.DisplayName" xml:space="preserve">
+    <value>Domain Entity</value>
+    <comment>DisplayName for DomainRole &apos;DomainEntity&apos; on DomainRelationship &apos;DomainEntityModelHasDomainEntities&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModelHasDomainEntities/DomainEntity.PropertyDisplayName" xml:space="preserve">
+    <value>Domain Entity Model</value>
+    <comment>PropertyDisplayName for DomainRole &apos;DomainEntity&apos; on DomainRelationship &apos;DomainEntityModelHasDomainEntities&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModelHasDomainEntityCollections.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.DomainEntityModelHasDomainEntityCollections</value>
+    <comment>Description for DomainClass &apos;DomainEntityModelHasDomainEntityCollections&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModelHasDomainEntityCollections.DisplayName" xml:space="preserve">
+    <value>Domain Entity Model Has Domain Entity Collections</value>
+    <comment>DisplayName for DomainClass &apos;DomainEntityModelHasDomainEntityCollections&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModelHasDomainEntityCollections/DomainEntityModel.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.DomainEntityModelHasDomainEntityCollections.DomainEntityModel</value>
+    <comment>Description for DomainRole &apos;DomainEntityModel&apos; on DomainRelationship &apos;DomainEntityModelHasDomainEntityCollections&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModelHasDomainEntityCollections/DomainEntityModel.DisplayName" xml:space="preserve">
+    <value>Domain Entity Model</value>
+    <comment>DisplayName for DomainRole &apos;DomainEntityModel&apos; on DomainRelationship &apos;DomainEntityModelHasDomainEntityCollections&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModelHasDomainEntityCollections/DomainEntityModel.PropertyDisplayName" xml:space="preserve">
+    <value>Domain Entity Collections</value>
+    <comment>PropertyDisplayName for DomainRole &apos;DomainEntityModel&apos; on DomainRelationship &apos;DomainEntityModelHasDomainEntityCollections&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModelHasDomainEntityCollections/DomainEntityCollection.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.DomainEntityModelHasDomainEntityCollections.DomainEntityCollection</value>
+    <comment>Description for DomainRole &apos;DomainEntityCollection&apos; on DomainRelationship &apos;DomainEntityModelHasDomainEntityCollections&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModelHasDomainEntityCollections/DomainEntityCollection.DisplayName" xml:space="preserve">
+    <value>Domain Entity Collection</value>
+    <comment>DisplayName for DomainRole &apos;DomainEntityCollection&apos; on DomainRelationship &apos;DomainEntityModelHasDomainEntityCollections&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityModelHasDomainEntityCollections/DomainEntityCollection.PropertyDisplayName" xml:space="preserve">
+    <value>Domain Entity Model</value>
+    <comment>PropertyDisplayName for DomainRole &apos;DomainEntityCollection&apos; on DomainRelationship &apos;DomainEntityModelHasDomainEntityCollections&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityReferencesTargetDomainEntities.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.DomainEntityReferencesTargetDomainEntities</value>
+    <comment>Description for DomainClass &apos;DomainEntityReferencesTargetDomainEntities&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityReferencesTargetDomainEntities.DisplayName" xml:space="preserve">
+    <value>Domain Entity References Target Domain Entities</value>
+    <comment>DisplayName for DomainClass &apos;DomainEntityReferencesTargetDomainEntities&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityReferencesTargetDomainEntities/SourceDomainEntity.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.DomainEntityReferencesTargetDomainEntities.SourceDomainEntity</value>
+    <comment>Description for DomainRole &apos;SourceDomainEntity&apos; on DomainRelationship &apos;DomainEntityReferencesTargetDomainEntities&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityReferencesTargetDomainEntities/SourceDomainEntity.DisplayName" xml:space="preserve">
+    <value>Source Domain Entity</value>
+    <comment>DisplayName for DomainRole &apos;SourceDomainEntity&apos; on DomainRelationship &apos;DomainEntityReferencesTargetDomainEntities&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityReferencesTargetDomainEntities/SourceDomainEntity.PropertyDisplayName" xml:space="preserve">
+    <value>Target Domain Entities</value>
+    <comment>PropertyDisplayName for DomainRole &apos;SourceDomainEntity&apos; on DomainRelationship &apos;DomainEntityReferencesTargetDomainEntities&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityReferencesTargetDomainEntities/TargetDomainEntity.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.DomainEntityReferencesTargetDomainEntities.TargetDomainEntity</value>
+    <comment>Description for DomainRole &apos;TargetDomainEntity&apos; on DomainRelationship &apos;DomainEntityReferencesTargetDomainEntities&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityReferencesTargetDomainEntities/TargetDomainEntity.DisplayName" xml:space="preserve">
+    <value>Target Domain Entity</value>
+    <comment>DisplayName for DomainRole &apos;TargetDomainEntity&apos; on DomainRelationship &apos;DomainEntityReferencesTargetDomainEntities&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityReferencesTargetDomainEntities/TargetDomainEntity.PropertyDisplayName" xml:space="preserve">
+    <value>Source Domain Entities</value>
+    <comment>PropertyDisplayName for DomainRole &apos;TargetDomainEntity&apos; on DomainRelationship &apos;DomainEntityReferencesTargetDomainEntities&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityReferencesDomainEntityCollections.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.DomainEntityReferencesDomainEntityCollections</value>
+    <comment>Description for DomainClass &apos;DomainEntityReferencesDomainEntityCollections&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityReferencesDomainEntityCollections.DisplayName" xml:space="preserve">
+    <value>Domain Entity References Domain Entity Collections</value>
+    <comment>DisplayName for DomainClass &apos;DomainEntityReferencesDomainEntityCollections&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityReferencesDomainEntityCollections/DomainEntity.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.DomainEntityReferencesDomainEntityCollections.DomainEntity</value>
+    <comment>Description for DomainRole &apos;DomainEntity&apos; on DomainRelationship &apos;DomainEntityReferencesDomainEntityCollections&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityReferencesDomainEntityCollections/DomainEntity.DisplayName" xml:space="preserve">
+    <value>Domain Entity</value>
+    <comment>DisplayName for DomainRole &apos;DomainEntity&apos; on DomainRelationship &apos;DomainEntityReferencesDomainEntityCollections&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityReferencesDomainEntityCollections/DomainEntity.PropertyDisplayName" xml:space="preserve">
+    <value>Domain Entity Collections</value>
+    <comment>PropertyDisplayName for DomainRole &apos;DomainEntity&apos; on DomainRelationship &apos;DomainEntityReferencesDomainEntityCollections&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityReferencesDomainEntityCollections/DomainEntityCollection.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.DomainEntityReferencesDomainEntityCollections.DomainEntityCollection</value>
+    <comment>Description for DomainRole &apos;DomainEntityCollection&apos; on DomainRelationship &apos;DomainEntityReferencesDomainEntityCollections&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityReferencesDomainEntityCollections/DomainEntityCollection.DisplayName" xml:space="preserve">
+    <value>Domain Entity Collection</value>
+    <comment>DisplayName for DomainRole &apos;DomainEntityCollection&apos; on DomainRelationship &apos;DomainEntityReferencesDomainEntityCollections&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.DomainEntityReferencesDomainEntityCollections/DomainEntityCollection.PropertyDisplayName" xml:space="preserve">
+    <value>Domain Entity</value>
+    <comment>PropertyDisplayName for DomainRole &apos;DomainEntityCollection&apos; on DomainRelationship &apos;DomainEntityReferencesDomainEntityCollections&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.EntityCompartmentShape.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.EntityCompartmentShape</value>
+    <comment>Description for DomainClass &apos;EntityCompartmentShape&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.EntityCompartmentShape.DisplayName" xml:space="preserve">
+    <value>Entity Compartment Shape</value>
+    <comment>DisplayName for DomainClass &apos;EntityCompartmentShape&apos;</comment>
+  </data>
+  <data name="EntityCompartmentShapePrimitivePropertiesTitle" xml:space="preserve">
+    <value>Primitive Properties</value>
+    <comment>Compartment title</comment>
+  </data>
+  <data name="EntityCompartmentShapeEntityPropertiesTitle" xml:space="preserve">
+    <value>Entity Properties</value>
+    <comment>Compartment title</comment>
+  </data>
+  <data name="EntityCompartmentShapeTextDecoratorDefaultText" xml:space="preserve">
+    <value>TextDecorator</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.EntityCollectionShape.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.EntityCollectionShape</value>
+    <comment>Description for DomainClass &apos;EntityCollectionShape&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.EntityCollectionShape.DisplayName" xml:space="preserve">
+    <value>Entity Collection Shape</value>
+    <comment>DisplayName for DomainClass &apos;EntityCollectionShape&apos;</comment>
+  </data>
+  <data name="EntityCollectionShapeTextDecoratorDefaultText" xml:space="preserve">
+    <value>TextDecorator</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.EntityConnector.Description" xml:space="preserve">
+    <value>Connector between the ExampleShapes. Represents ExampleRelationships on the Diagram.</value>
+    <comment>Description for DomainClass &apos;EntityConnector&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.EntityConnector.DisplayName" xml:space="preserve">
+    <value>Entity Connector</value>
+    <comment>DisplayName for DomainClass &apos;EntityConnector&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.EntityCollectionConector.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.EntityCollectionConector</value>
+    <comment>Description for DomainClass &apos;EntityCollectionConector&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.EntityCollectionConector.DisplayName" xml:space="preserve">
+    <value>Entity Collection Conector</value>
+    <comment>DisplayName for DomainClass &apos;EntityCollectionConector&apos;</comment>
+  </data>
+  <data name="FormatList" xml:space="preserve">
+    <value>Eleven.VS.Templates.Ado.Package (*.elevenentitymodel)|*.elevenentitymodel</value>
+    <comment>A list of file format specifiers for the Save dialog box</comment>
+  </data>
+  <data name="ModelExplorerTitle" xml:space="preserve">
+    <value>Eleven Entity Model Explorer</value>
+    <comment>Model Explorer Toolwindow title</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.ElevenEntityModelDiagram.Description" xml:space="preserve">
+    <value>Description for Eleven.VS.Templates.Ado.Dsl.ElevenEntityModelDiagram</value>
+    <comment>Description for DomainClass &apos;ElevenEntityModelDiagram&apos;</comment>
+  </data>
+  <data name="Eleven.VS.Templates.Ado.Dsl.ElevenEntityModelDiagram.DisplayName" xml:space="preserve">
+    <value>Minimal Language Diagram</value>
+    <comment>DisplayName for DomainClass &apos;ElevenEntityModelDiagram&apos;</comment>
+  </data>
+  <data name="Eleven Entity ModelToolboxTab" xml:space="preserve">
+    <value>Eleven Entity Model</value>
+    <comment>Toolbox item tab name</comment>
+  </data>
+  <data name="EntityToolToolboxItem" xml:space="preserve">
+    <value>Entity Shape</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EntityToolToolboxTooltip" xml:space="preserve">
+    <value>Create a entity shape</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="EntityConnectorToolToolboxItem" xml:space="preserve">
+    <value>Entity Connector</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EntityConnectorToolToolboxTooltip" xml:space="preserve">
+    <value>Drag between entities</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="EntityCollectionConnectorToolToolboxItem" xml:space="preserve">
+    <value>Entity Collection Connector</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EntityCollectionConnectorToolToolboxTooltip" xml:space="preserve">
+    <value>Drag between entity collection and entity</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="EntityCollectionToolToolboxItem" xml:space="preserve">
+    <value>Entity Collection Shape</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="EntityCollectionToolToolboxTooltip" xml:space="preserve">
+    <value>Create a entity collection shape</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="UnresolvedToolboxItem" xml:space="preserve">
+    <value>ToolboxItem {0} was not found</value>
+    <comment>Invalid toolId</comment>
+  </data>
+  <data name="UnsupportedToolboxFormat" xml:space="preserve">
+    <value>Unsupported toolbox format: {0}</value>
+    <comment>Unsupported format Id</comment>
+  </data>
+  <data name="UnrecognizedElementType" xml:space="preserve">
+    <value>ElementType {0} is not recognized as a type of domain class which belongs to this domain model.</value>
+    <comment>Incorrect ElementType passed in to Model.CreateElement method</comment>
+  </data>
+  <data name="UnrecognizedElementLinkType" xml:space="preserve">
+    <value>ElementLinkType {0} is not recognized as a type of domain relationship which belongs to this domain model.</value>
+    <comment>Incorrect ElementLinkType passed in to Model.CreateElementLink method</comment>
+  </data>
+  <data name="AmbiguousSchema" xml:space="preserve">
+    <value>More than one schema found for target namespace &apos;{0}&apos;, use the first one at &apos;{1}&apos;.</value>
+    <comment>Serialization Warning: AmbiguousSchema</comment>
+  </data>
+  <data name="ExpectingFullFormRelationship" xml:space="preserve">
+    <value>Element &apos;{0}&apos; is treated as the target role-player of a relationship &apos;{1}&apos; instance, which should be serialized in full-form.</value>
+    <comment>Serialization Warning: ExpectingFullFormRelationship</comment>
+  </data>
+  <data name="ExpectingShortFormRelationship" xml:space="preserve">
+    <value>Instances of relationship &apos;{0}&apos; should be serialized in short-form.</value>
+    <comment>Serialization Warning: ExpectingShortFormRelationship</comment>
+  </data>
+  <data name="IgnoredPropertyValue" xml:space="preserve">
+    <value>Invalid property value &apos;{0}&apos; for property &apos;{1}&apos; with type &apos;{2}&apos;, ignored.</value>
+    <comment>Serialization Warning: IgnoredPropertyValue</comment>
+  </data>
+  <data name="MissingId" xml:space="preserve">
+    <value>Missing &apos;Id&apos; attribute, a new Guid &apos;{0}&apos; is auto-generated.</value>
+    <comment>Serialization Warning: MissingId</comment>
+  </data>
+  <data name="MonikerResolvedToDuplicateLink" xml:space="preserve">
+    <value>Resolving moniker &apos;{0}&apos; causes a duplicate link to be created, so the link and the moniker are ignored.</value>
+    <comment>Serialization Warning: MonikerResolvedToDuplicateLink</comment>
+  </data>
+  <data name="NoSchema" xml:space="preserve">
+    <value>Cannot find a schema that defines target namespace &apos;{0}&apos;, schema validation skipped.</value>
+    <comment>Serialization Warning: NoSchema</comment>
+  </data>
+  <data name="UnexpectedXmlElement" xml:space="preserve">
+    <value>Unexpected XML element &apos;{0}&apos;, ignored.</value>
+    <comment>Serialization Warning: UnexpectedXmlElement</comment>
+  </data>
+  <data name="AmbiguousMoniker" xml:space="preserve">
+    <value>Ambiguous moniker &apos;{0}&apos; encountered. It is used for both &apos;{1}&apos; and &apos;{2}&apos;.</value>
+    <comment>Serialization Error: AmbiguousMoniker</comment>
+  </data>
+  <data name="CannotMonikerizeElement" xml:space="preserve">
+    <value>Instances of DomainClass &apos;{0}&apos; cannot be serialized as a moniker.
+A DomainClass can be serialized as a moniker only if 
+1) it has a defined/inherited DomainProperty marked as IsMonikerKey=true, or 
+2) it is marked/inherited with SerializeId=true.</value>
+    <comment>Serialization Error: CannotMonikerizeElement</comment>
+  </data>
+  <data name="CannotOpenDocument" xml:space="preserve">
+    <value>Error encountered, check Error List window for details.</value>
+    <comment>Serialization Error: CannotOpenDocument</comment>
+  </data>
+  <data name="CannotSaveDocument" xml:space="preserve">
+    <value>Error encountered, check Error List window for details.</value>
+    <comment>Serialization Error: CannotSaveDocument</comment>
+  </data>
+  <data name="DanglingRelationship" xml:space="preserve">
+    <value>Relationship &apos;{0}&apos; instance is missing target role-player.</value>
+    <comment>Serialization Error: DanglingRelationship</comment>
+  </data>
+  <data name="InvalidPropertyValue" xml:space="preserve">
+    <value>Invalid property value &apos;{0}&apos; for property &apos;{1}&apos; with type &apos;{2}&apos;.</value>
+    <comment>Serialization Error: InvalidPropertyValue</comment>
+  </data>
+  <data name="MissingMoniker" xml:space="preserve">
+    <value>Missing moniker. A moniker is expected in attribute &apos;{0}&apos;.</value>
+    <comment>Serialization Error: MissingMoniker</comment>
+  </data>
+  <data name="MissingTransaction" xml:space="preserve">
+    <value>This must be called within the context of an active transaction.</value>
+    <comment>Serialization Error: MissingTransaction</comment>
+  </data>
+  <data name="UnresolvedMoniker" xml:space="preserve">
+    <value>Cannot resolve moniker &apos;{0}&apos;.</value>
+    <comment>Serialization Error: UnresolvedMoniker</comment>
+  </data>
+  <data name="VersionMismatch" xml:space="preserve">
+    <value>Unsupported version &apos;{0}&apos;, can only support &apos;{1}&apos;.</value>
+    <comment>Serialization Error: VersionMismatch</comment>
+  </data>
+  <data name="CannotCloseExistingDiagramDocument" xml:space="preserve">
+    <value>Diagram file &apos;{0}&apos; cannot be closed.</value>
+    <comment>User cancel closing diagram file. Hence, the DSL model file cannot be opened</comment>
+  </data>
+  <data name="BindingErrorOccurred" xml:space="preserve">
+    <value>Extensions for this designer may not be found as a MEF binding error has occurred. The error that occurred was:
+{0}</value>
+    <comment>MEF binding error occurred - exception message being logged in the error window so the user is aware.</comment>
+  </data>
+  <data name="InvalidSaveRootElementType" xml:space="preserve">
+    <value>&apos;{0}&apos; is not a valid root element type.</value>
+    <comment>Exception message used if an invalid root element type is passed to IDomainModelSerializer.SaveModel / SaveModelAndDiagram</comment>
+  </data>
+  <data name="InvalidSaveDiagramType" xml:space="preserve">
+    <value>&apos;{0}&apos; is not a valid diagram type.</value>
+    <comment>Exception message used if an invalid diagram type is passed to IDomainModelSerializer.SaveModelAndDiagram</comment>
+  </data>
+  <data name="MinimumMultiplicityMissingLink" xml:space="preserve">
+    <value>{0} {1} has no {2}.</value>
+    <comment>Multiplicity underflow validation.</comment>
+  </data>
+  <data name="SaveOperationCancelled" xml:space="preserve">
+    <value>Save operation cancelled.</value>
+    <comment>Message when save is cancelled on validation errors</comment>
+  </data>
+  <data name="SaveValidationFailed" xml:space="preserve">
+    <value>There were validation errors, continue save?</value>
+    <comment>Message when validation errors are found on save</comment>
+  </data>
+  <data name="UnloadableSaveValidationFailed" xml:space="preserve">
+    <value>There were validation errors. Continuing to save may cause the file to become unloadable, do you want to continue?</value>
+    <comment>Message when validation errors are found on save that will cause file to become unloadable</comment>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="EntityCompartmentShapeIconDecoratorDefaultImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\Images\DomainEntity.bmp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Icon decorator default image</comment>
+  </data>
+  <data name="EntityCollectionShapeIconDecoratorDefaultImage" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\Images\DomainEntityCollection.bmp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Icon decorator default image</comment>
+  </data>
+  <data name="EntityToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\Images\DomainEntity.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="EntityConnectorToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\Images\DomainEntityConnector.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="EntityCollectionConnectorToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\Images\DomainEntityCollectionConnector.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="EntityCollectionToolToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\Images\DomainEntityCollection.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+</root>
+
+

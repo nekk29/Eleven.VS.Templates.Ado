@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+	<TemplateData>
+		<Name>Modeling.Model</Name>
+		<Description>Project template for modeling model project using n-layer architecture.</Description>
+		<Icon>Template.ico</Icon>
+		<ProjectType>CSharp</ProjectType>
+		<RequiredFrameworkVersion>4.0</RequiredFrameworkVersion>
+		<SortOrder>1000</SortOrder>
+		<TemplateID>F8E6FDFA-ADD8-49C9-99A5-5B47D9F6AC0D</TemplateID>
+		<CreateNewFolder>false</CreateNewFolder>
+		<DefaultName>Modeling.Model</DefaultName>
+		<ProvideDefaultName>true</ProvideDefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<Project TargetFileName="$saferootprojectname$.Modeling.csproj" File="ProjectTemplate.csproj" ReplaceParameters="true">
+			<ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+			<ProjectItem ReplaceParameters="true" OpenInEditor="false">domainentitymodel.elevenentitymodel</ProjectItem>
+			<ProjectItem ReplaceParameters="true" OpenInEditor="false">domainentitymodel.elevenentitymodel.diagram</ProjectItem>
+		</Project>
+	</TemplateContent>
+</VSTemplate>

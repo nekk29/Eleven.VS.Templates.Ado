@@ -1,0 +1,34 @@
+﻿<#@ template language="C#" inherits="Eleven.VS.Templates.Ado.Dsl.Util.CodeGeneratorBase" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="Eleven.VS.Templates.Ado.Package.TextTemplates.Helper" #>
+<#@ import namespace="Eleven.VS.Templates.Ado.Dsl.Util" #>
+<#@ import namespace="Eleven.VS.Templates.Ado.Dsl" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+namespace <#= this.DomainEntityModel.ProjectImplementationDataAccessCore #>
+{
+<# PushIndent("    "); #>
+public class Procedimiento
+{
+
+<# PushIndent("    "); #>
+<#
+foreach(DomainEntity domainEntity in this.DomainEntityModel.DomainEntities)
+{
+#>
+#region PROCEDIMIENTOS ALMACENADOS <#= domainEntity.Name.ToUpper() #>
+public const string <#= TemplateHelperCrossCutting.Get_Insert_SPName_Constant(domainEntity) #> = "<#= TemplateHelperDatabase.Get_DataAccess_Insert_SPName(domainEntity) #>";
+public const string <#= TemplateHelperCrossCutting.Get_Update_SPName_Constant(domainEntity) #> = "<#= TemplateHelperDatabase.Get_DataAccess_Update_SPName(domainEntity) #>";
+public const string <#= TemplateHelperCrossCutting.Get_Delete_SPName_Constant(domainEntity) #> = "<#= TemplateHelperDatabase.Get_DataAccess_Delete_SPName(domainEntity) #>";
+public const string <#= TemplateHelperCrossCutting.Get_SelectId_SPName_Constant(domainEntity) #> = "<#= TemplateHelperDatabase.Get_DataAccess_SelectId_SPName(domainEntity) #>";
+public const string <#= TemplateHelperCrossCutting.Get_Select_SPName_Constant(domainEntity) #> = "<#= TemplateHelperDatabase.Get_DataAccess_Select_SPName(domainEntity) #>";
+#endregion
+
+<#
+}
+#>
+<# PopIndent(); #>
+}
+<# PopIndent(); #>
+}

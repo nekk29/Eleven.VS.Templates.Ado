@@ -1,0 +1,151 @@
+﻿<#@ template language="C#" inherits="Eleven.VS.Templates.Ado.Dsl.Util.CodeGeneratorBase" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="Eleven.VS.Templates.Ado.Package.TextTemplates.Helper" #>
+<#@ import namespace="Eleven.VS.Templates.Ado.Dsl.Util" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#
+String EntityName = TemplateHelperDataAccess.Get_Variable_Name(DomainEntity.Name);
+String DomainEntityCollectionName = String.Empty;
+#>
+using System;
+using System.Data;
+using System.Data.Common;
+using Microsoft.Practices.EnterpriseLibrary.Data;
+using <#= this.DomainEntity.DomainEntityModel.ProjectImplementationDataAccessCore #>;
+using <#= this.DomainEntity.DomainEntityModel.ProjectImplementationEntity #>;
+
+namespace <#= this.DomainEntity.DomainEntityModel.ProjectImplementationDataAccess #>
+{
+<# PushIndent("    "); #>
+<#= DomainEntity.AccessModifier #> partial class <#= TemplateHelperDataAccess.Get_DataAccess_Class_Name(DomainEntity) #>
+{
+<# PushIndent("    "); #>
+private static DatabaseProviderFactory oDatabaseProviderFactory = new DatabaseProviderFactory();
+private Database oDatabase = oDatabaseProviderFactory.Create(Conexion.cnConexion);
+
+//*********************** FUNCION PARA REGISTRO DE <#= DomainEntity.Name.ToUpper() #> ***********************//
+public <#= DomainEntity.Name #> <#= TemplateHelperDataAccess.Get_DataAccess_Insert_MethodName(DomainEntity) #>(<#= DomainEntity.Name #> <#= EntityName #>)
+{
+<# PushIndent("    "); #>
+DbCommand oDbCommand = oDatabase.GetStoredProcCommand(Procedimiento.<#= TemplateHelperDataAccess.Get_Insert_SPName_Constant(DomainEntity) #>);
+
+<#= TemplateHelperDataAccess.Get_Parameter_Text(DomainEntity, false, false, false, 0) #>
+
+oDatabase.ExecuteNonQuery(oDbCommand);
+<#
+if(TemplateHelperDataAccess.DomainEntity_Has_OutputParameters(DomainEntity))
+{
+#>
+
+<#= TemplateHelperDataAccess.Get_Output_Parameters(DomainEntity, 3) #>
+<#
+}
+#>
+
+return <#= EntityName #>;
+<# PopIndent(); #>
+}
+
+//******************** FUNCION PARA ACTUALIZACION DE <#= DomainEntity.Name.ToUpper() #> *********************//
+public <#= DomainEntity.Name #> <#= TemplateHelperDataAccess.Get_DataAccess_Update_MethodName(DomainEntity) #>(<#= DomainEntity.Name #> <#= EntityName #>)
+{
+<# PushIndent("    "); #>
+DbCommand oDbCommand = oDatabase.GetStoredProcCommand(Procedimiento.<#= TemplateHelperDataAccess.Get_Update_SPName_Constant(DomainEntity) #>);
+
+<#= TemplateHelperDataAccess.Get_Parameter_Text(DomainEntity, false, false, true, 0) #>
+
+oDatabase.ExecuteNonQuery(oDbCommand);
+
+return <#= EntityName #>;
+<# PopIndent(); #>
+}
+
+//********************* FUNCION PARA ELIMINACION DE <#= DomainEntity.Name.ToUpper() #> **********************//
+public <#= DomainEntity.Name #> <#= TemplateHelperDataAccess.Get_DataAccess_Delete_MethodName(DomainEntity) #>(
+<# PushIndent("    "); #>
+<#= TemplateHelperDataAccess.Get_Method_Key_Parameters(DomainEntity, 3) #>
+<# PopIndent(); #>
+)
+{
+<# PushIndent("    "); #>
+<#= DomainEntity.Name #> <#= EntityName #> = new <#= DomainEntity.Name #>();
+
+DbCommand oDbCommand = oDatabase.GetStoredProcCommand(Procedimiento.<#= TemplateHelperDataAccess.Get_Delete_SPName_Constant(DomainEntity) #>);
+<#= TemplateHelperDataAccess.Get_Parameter_Text(DomainEntity, true, true, true, 0) #>
+oDatabase.ExecuteNonQuery(oDbCommand);
+
+return <#= EntityName #>;
+<# PopIndent(); #>
+}
+
+//******************* FUNCION PARA SELECCION POR ID DE <#= DomainEntity.Name.ToUpper() #> *******************//
+public <#= DomainEntity.Name #> <#= TemplateHelperDataAccess.Get_DataAccess_SelectId_MethodName(DomainEntity) #>(
+<# PushIndent("    "); #>
+<#= TemplateHelperDataAccess.Get_Method_Key_Parameters(DomainEntity, 3) #>
+<# PopIndent(); #>
+)
+{
+<# PushIndent("    "); #>
+<#= DomainEntity.Name #> <#= EntityName #> = new <#= DomainEntity.Name #>();
+DbCommand oDbCommand = oDatabase.GetStoredProcCommand(Procedimiento.<#= TemplateHelperDataAccess.Get_SelectId_SPName_Constant(DomainEntity) #>);
+
+<#= TemplateHelperDataAccess.Get_Parameter_Text(DomainEntity, true, true, true, 0) #>
+
+using (IDataReader oIDataReader = oDatabase.ExecuteReader(oDbCommand))
+{
+<# PushIndent("    "); #>
+while (oIDataReader.Read())
+{
+<# PushIndent("    "); #>
+<#= TemplateHelperDataAccess.Get_Mapping_Text(DomainEntity, String.Empty, 0) #>
+<# PopIndent(); #>
+}
+<# PopIndent(); #>
+}
+
+return <#= EntityName #>;
+<# PopIndent(); #>
+}
+
+//********************** FUNCION PARA SELECCION DE <#= DomainEntity.Name.ToUpper() #> ***********************//
+<#
+DomainEntityCollectionName = TemplateHelperDataAccess.DomainEntity_Has_DomainEntityCollections(DomainEntity);
+if(String.IsNullOrEmpty(DomainEntityCollectionName))
+	DomainEntityCollectionName = String.Concat("System.Collections.Generic.List<", DomainEntity.Name, ">");
+#>
+public <#= DomainEntityCollectionName #> <#= TemplateHelperDataAccess.Get_DataAccess_Select_MethodName(DomainEntity) #>(<#= DomainEntity.Name #> <#= EntityName #>)
+{
+<#
+EntityName = TemplateHelperDataAccess.Get_Variable_Name(String.Concat("Lista", DomainEntity.Name));
+PushIndent("    ");
+#>
+<#= DomainEntityCollectionName #> <#= EntityName #> = new <#= DomainEntityCollectionName #>();
+DbCommand oDbCommand = oDatabase.GetStoredProcCommand(Procedimiento.<#= TemplateHelperDataAccess.Get_Select_SPName_Constant(DomainEntity) #>);
+
+<#= TemplateHelperDataAccess.Get_Parameter_Text(DomainEntity, false, false, true, 0) #>
+
+using (IDataReader oIDataReader = oDatabase.ExecuteReader(oDbCommand))
+{
+<# PushIndent("    "); #>
+while (oIDataReader.Read())
+{
+<# PushIndent("    "); #>
+<#= TemplateHelperDataAccess.Get_Mapping_Text(DomainEntity, EntityName, 0) #>
+<# PopIndent(); #>
+}
+<# PopIndent(); #>
+}
+
+return <#= EntityName #>;
+<# PopIndent(); #>
+}
+
+<# PopIndent(); #>
+}
+<# PopIndent(); #>
+}
+<#
+ClearIndent();
+#>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+	<TemplateData>
+		<Name>CrossCutting.Common</Name>
+		<Description>Project template for cross cutting project using n-layer architecture.</Description>
+		<Icon>Template.ico</Icon>
+		<ProjectType>CSharp</ProjectType>
+		<RequiredFrameworkVersion>4.0</RequiredFrameworkVersion>
+		<SortOrder>1000</SortOrder>
+		<TemplateID>B96C15C5-13C7-419F-8248-24AFF299728F</TemplateID>
+		<CreateNewFolder>false</CreateNewFolder>
+		<DefaultName>CrossCutting.Common</DefaultName>
+		<ProvideDefaultName>true</ProvideDefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<Project TargetFileName="$saferootprojectname$.CrossCutting.Common.csproj" File="ProjectTemplate.csproj" ReplaceParameters="true">
+			<ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+		</Project>
+	</TemplateContent>
+</VSTemplate>

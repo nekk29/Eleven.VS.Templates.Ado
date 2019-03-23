@@ -1,0 +1,64 @@
+﻿<#@ template language="C#" inherits="Eleven.VS.Templates.Ado.Dsl.Util.CodeGeneratorBase" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="Eleven.VS.Templates.Ado.Package.TextTemplates.Helper" #>
+<#@ import namespace="Eleven.VS.Templates.Ado.Dsl.Resources" #>
+<#@ import namespace="Eleven.VS.Templates.Ado.Dsl.Util" #>
+<#@ import namespace="Eleven.VS.Templates.Ado.Dsl" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+namespace <#= this.DomainEntity.DomainEntityModel.ProjectImplementationEntity #>
+{
+<#
+	PushIndent("    ");
+#>
+<#= DomainEntity.AccessModifier #> partial class <#= DomainEntity.Name #>
+{
+<#
+	PushIndent("    ");
+	if(TemplateHelperDomainEntity.hasEntityCollectionsGenerated(DomainEntity))
+	{
+#>
+public <#= DomainEntity.Name #>()
+{
+<#
+		PushIndent("    ");
+		foreach (DomainEntityProperty domainEntityProperty in DomainEntity.DomainEntityProperties)
+		{
+			if (domainEntityProperty.IsGeneratedCollection && domainEntityProperty.CollectionType == TypeConverters.DomainEntityProperty_CollectionType_ICollection)
+			{
+#>
+<#= domainEntityProperty.Name #> = new System.Collections.Generic.HashSet<<#= domainEntityProperty.DomainEntityType #>>();
+
+<#
+			}
+		}
+		PopIndent();
+#>
+}
+
+<#
+	}
+	foreach (DomainEntityProperty domainEntityProperty in DomainEntity.DomainEntityProperties)
+	{
+#>
+<#= domainEntityProperty.AccessModifier #> <#= TemplateHelperCommon.Get_StringType(domainEntityProperty) #> <#= domainEntityProperty.Name #> { get; set; }
+
+<#
+	}
+#>
+<#
+	foreach (PrimitiveProperty primitiveProperty in DomainEntity.PrimitiveProperties)
+	{
+#>
+<#= primitiveProperty.AccessModifier #> <#= TemplateHelperCommon.Get_StringType(primitiveProperty) #> <#= primitiveProperty.Name #> { get; set; }
+
+<#
+	}
+	PopIndent();
+#>
+}
+<#
+	PopIndent();
+#>
+}

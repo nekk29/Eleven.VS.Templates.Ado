@@ -1,0 +1,17 @@
+﻿<!--DSL Tools Language Template-->
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TemplateData>
+		<TemplateID>{ff2c9570-b940-4acf-b2e7-591950f5b24e}</TemplateID>
+		<Name Package="{1fd0aa89-51da-4597-8e90-29b3e14673d2}" ID="103"/>
+		<Description Package="{1fd0aa89-51da-4597-8e90-29b3e14673d2}" ID="102"/>
+		<Icon Package="{1fd0aa89-51da-4597-8e90-29b3e14673d2}" ID="201" />
+		<ProjectType>CSharp</ProjectType>
+		<SortOrder>360</SortOrder>
+		<DefaultName>ElevenEntityModel.elevenentitymodel</DefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectItem TargetFileName="$fileinputname$.elevenentitymodel">elevenentitymodel.elevenentitymodel</ProjectItem>
+		<ProjectItem TargetFileName="$fileinputname$.elevenentitymodel.diagram">elevenentitymodel.diagram</ProjectItem>
+	</TemplateContent>
+</VSTemplate>
+

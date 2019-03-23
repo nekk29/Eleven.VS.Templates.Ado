@@ -1,0 +1,39 @@
+﻿<#@ template language="C#" inherits="Eleven.VS.Templates.Ado.Dsl.Util.CodeGeneratorBase" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="Eleven.VS.Templates.Ado.Package.TextTemplates.Helper" #>
+<#@ import namespace="Eleven.VS.Templates.Ado.Dsl.Util" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+CREATE PROCEDURE <#= TemplateHelperDatabase.Get_DataAccess_Insert_SPName(DomainEntity) #>
+<# PushIndent("    "); #>
+<#= TemplateHelperDatabase.Get_DataAccess_Parameters_StoreProcedure(DomainEntity, 0, true, true, true) #>
+<# PopIndent(); #>
+AS
+BEGIN
+<# PushIndent("    "); #>
+SET NOCOUNT ON
+
+INSERT INTO <#= TemplateHelperDatabase.Get_DataAccess_TableName(DomainEntity) #> (
+<# PushIndent("    "); #>
+<#= TemplateHelperDatabase.Get_DataAccess_Columns_StoreProcedure(DomainEntity, 0, false, true) #>
+<# PopIndent(); #>
+)
+VALUES (
+<# PushIndent("    "); #>
+<#= TemplateHelperDatabase.Get_DataAccess_ColumnParameters_StoreProcedure(DomainEntity, 0, false, true) #>
+<# PopIndent(); #>
+)
+<#
+if(TemplateHelperDatabase.DomainEntity_Has_OutputParameters(DomainEntity))
+{
+#>
+
+<#= TemplateHelperDatabase.Get_DataAccess_OutputKey(DomainEntity, 0) #>
+<#
+}
+#>
+
+SET NOCOUNT OFF
+<# PopIndent(); #>
+END

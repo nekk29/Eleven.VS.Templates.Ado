@@ -1,0 +1,26 @@
+﻿<#@ template language="C#" inherits="Eleven.VS.Templates.Ado.Dsl.Util.CodeGeneratorBase" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="Eleven.VS.Templates.Ado.Package.TextTemplates.Helper" #>
+<#@ import namespace="Eleven.VS.Templates.Ado.Dsl.Util" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+namespace <#= this.DomainEntityCollection.DomainEntityModel.ProjectImplementationEntity #>
+{
+<#
+PushIndent("    ");
+#>
+<#= DomainEntityCollection.AccessModifier #> partial class <#= DomainEntityCollection.Name #> : <#= TemplateHelperCommon.Get_StringType(DomainEntityCollection) #>
+{
+<#
+	PushIndent("    ");
+#>
+
+<#
+	PopIndent();
+#>
+}
+<#
+	PopIndent();
+#>
+}

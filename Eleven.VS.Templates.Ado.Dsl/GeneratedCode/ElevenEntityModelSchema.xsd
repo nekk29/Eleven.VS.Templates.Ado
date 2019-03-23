@@ -1,0 +1,726 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema id="ElevenEntityModelSchema" targetNamespace="http://schemas.microsoft.com/dsltools/ElevenEntityModel" elementFormDefault="qualified" xmlns="http://schemas.microsoft.com/dsltools/ElevenEntityModel" xmlns:core="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import id="CoreSchema" namespace="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" />
+  <!-- DomainEntityModel -->
+  <xsd:element name="domainEntityModel" type="DomainEntityModel" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="DomainEntityModel">
+    <xsd:annotation>
+      <xsd:documentation>Root element for entity model.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Relationship: DomainEntityModelHasDomainEntities -->
+          <xsd:element name="domainEntities" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of DomainEntityModelHasDomainEntities</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="domainEntityModelHasDomainEntities" minOccurs="0" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of DomainEntityModelHasDomainEntities needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: DomainEntityModelHasDomainEntityCollections -->
+          <xsd:element name="domainEntityCollections" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of DomainEntityModelHasDomainEntityCollections</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="domainEntityModelHasDomainEntityCollections" minOccurs="0" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of DomainEntityModelHasDomainEntityCollections needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- dslVersion -->
+        <xsd:attribute name="dslVersion" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Version of the model serialized in this file.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: ProjectImplementationDatabase -->
+        <xsd:attribute name="projectImplementationDatabase" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Especify the project to implement the database model.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: ProjectImplementationDataAccess -->
+        <xsd:attribute name="projectImplementationDataAccess" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Especify the project to implement the data access objects.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: ProjectImplementationEntity -->
+        <xsd:attribute name="projectImplementationEntity" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Especify the project to implement the entity objects.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: ProjectImplementationDomain -->
+        <xsd:attribute name="projectImplementationDomain" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Especify the project to implement the domain core objects.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: ProjectImplementationDataAccessCore -->
+        <xsd:attribute name="projectImplementationDataAccessCore" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Especify the project to implement the cross cutting objects.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: ProjectImplementationWeb -->
+        <xsd:attribute name="projectImplementationWeb" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Especify the project to implement the web objects.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- DomainEntityModel Moniker -->
+  <xsd:element name="domainEntityModelMoniker" type="DomainEntityModelMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="DomainEntityModelMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for DomainEntityModel instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- DomainEntity -->
+  <xsd:element name="domainEntity" type="DomainEntity" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="DomainEntity">
+    <xsd:annotation>
+      <xsd:documentation>Represents a entity of the model.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Relationship: DomainEntityHasDomainEntityProperties -->
+          <xsd:element name="domainEntityProperties" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of DomainEntityHasDomainEntityProperties</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="domainEntityHasDomainEntityProperties" minOccurs="0" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of DomainEntityHasDomainEntityProperties needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: DomainEntityHasPrimitiveProperties -->
+          <xsd:element name="primitiveProperties" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of DomainEntityHasPrimitiveProperties</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="domainEntityHasPrimitiveProperties" minOccurs="0" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of DomainEntityHasPrimitiveProperties needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: DomainEntityReferencesTargetDomainEntities -->
+          <xsd:element name="targetDomainEntities" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of DomainEntityReferencesTargetDomainEntities</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="domainEntityReferencesTargetDomainEntities" minOccurs="0" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of DomainEntityReferencesTargetDomainEntities needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: DomainEntityReferencesDomainEntityCollections -->
+          <xsd:element name="domainEntityCollections" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of DomainEntityReferencesDomainEntityCollections</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="domainEntityReferencesDomainEntityCollections" minOccurs="0" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of DomainEntityReferencesDomainEntityCollections needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: Name -->
+        <xsd:attribute name="name" type="xsd:string" use="required" >
+          <xsd:annotation>
+            <xsd:documentation>Name of the domain entity.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: AccessModifier -->
+        <xsd:attribute name="accessModifier" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Access modifier of the domain entity.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: DomainModule -->
+        <xsd:attribute name="domainModule" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Domain module name of the domain entity.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: IsDataAccessMapping -->
+        <xsd:attribute name="isDataAccessMapping" type="xsd:boolean" >
+          <xsd:annotation>
+            <xsd:documentation>Especify if the domain entity is mapping with a table in the database.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: DataAccessSchema -->
+        <xsd:attribute name="dataAccessSchema" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Name of the mapping table schema for the domain entity in the database.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: DataAccessTable -->
+        <xsd:attribute name="dataAccessTable" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Name of the mapping table for domain entity in the database.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: IdDomainEntity -->
+        <xsd:attribute name="idDomainEntity" type="xsd:string" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- DomainEntity Moniker -->
+  <xsd:element name="domainEntityMoniker" type="DomainEntityMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="DomainEntityMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for DomainEntity instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="name" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- DomainEntityProperty -->
+  <xsd:element name="domainEntityProperty" type="DomainEntityProperty" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="DomainEntityProperty">
+    <xsd:annotation>
+      <xsd:documentation>Represents a domain entity property in the domain entity.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: DomainEntityType -->
+        <xsd:attribute name="domainEntityType" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Domain entity type of the domain entity property.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: Name -->
+        <xsd:attribute name="name" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Name of the domain entity property.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: CollectionType -->
+        <xsd:attribute name="collectionType" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Collection type of the domain entity property.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: IsReadOnly -->
+        <xsd:attribute name="isReadOnly" type="xsd:boolean" >
+          <xsd:annotation>
+            <xsd:documentation>Especify if the domain entity property is read only.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: AccessModifier -->
+        <xsd:attribute name="accessModifier" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Access modifier of the domain entity property.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: IdDomainEntityProperty -->
+        <xsd:attribute name="idDomainEntityProperty" type="xsd:string" />
+        <!-- Property: IdDomainEntityReferencesTargetDomainEntities -->
+        <xsd:attribute name="idDomainEntityReferencesTargetDomainEntities" type="xsd:string" />
+        <!-- Property: IdDomainEntity -->
+        <xsd:attribute name="idDomainEntity" type="xsd:string" />
+        <!-- Property: IsGeneratedCollection -->
+        <xsd:attribute name="isGeneratedCollection" type="xsd:boolean" />
+        <!-- Property: HasDomainType -->
+        <xsd:attribute name="hasDomainType" type="xsd:boolean" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- DomainEntityProperty Moniker -->
+  <xsd:element name="domainEntityPropertyMoniker" type="DomainEntityPropertyMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="DomainEntityPropertyMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for DomainEntityProperty instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- PrimitiveProperty -->
+  <xsd:element name="primitiveProperty" type="PrimitiveProperty" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="PrimitiveProperty">
+    <xsd:annotation>
+      <xsd:documentation>Represents a primitive property in the domain entity.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: AccessModifier -->
+        <xsd:attribute name="accessModifier" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Access modifier of the primitive property.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: PrimitiveType -->
+        <xsd:attribute name="primitiveType" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>The primitive type of the primitive property.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: Name -->
+        <xsd:attribute name="name" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Name of the primitive property.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: CollectionType -->
+        <xsd:attribute name="collectionType" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Collection type of the primitive property.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: IsReadOnly -->
+        <xsd:attribute name="isReadOnly" type="xsd:boolean" >
+          <xsd:annotation>
+            <xsd:documentation>Especify if the primitive property is read only.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: IsDataAccessMapping -->
+        <xsd:attribute name="isDataAccessMapping" type="xsd:boolean" >
+          <xsd:annotation>
+            <xsd:documentation>Especify if the primitive property is mapping with a column table in the database.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: DataAccessColumn -->
+        <xsd:attribute name="dataAccessColumn" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Name of the mapping column table for the primitive property in the database.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: DataAccessType -->
+        <xsd:attribute name="dataAccessType" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Data type of the mapping column table for the primitive property in the database.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: IsPrimaryKey -->
+        <xsd:attribute name="isPrimaryKey" type="xsd:boolean" >
+          <xsd:annotation>
+            <xsd:documentation>Indicate if the the mapping column table for the primitive property in the database is the primary key.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- PrimitiveProperty Moniker -->
+  <xsd:element name="primitivePropertyMoniker" type="PrimitivePropertyMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="PrimitivePropertyMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for PrimitiveProperty instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- DomainEntityCollection -->
+  <xsd:element name="domainEntityCollection" type="DomainEntityCollection" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="DomainEntityCollection">
+    <xsd:annotation>
+      <xsd:documentation>Represents a entity collection in the model.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: DomainModule -->
+        <xsd:attribute name="domainModule" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Domain module name of the entity collection.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: AccessModifier -->
+        <xsd:attribute name="accessModifier" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Access modifier of the domain entity collection.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: Name -->
+        <xsd:attribute name="name" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Name of the domain entity collection.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: CollectionType -->
+        <xsd:attribute name="collectionType" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Collection type of the domain entity collection.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: DomainEntityType -->
+        <xsd:attribute name="domainEntityType" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Domain entity type of the domain entity collection.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: IdDomainEntityCollection -->
+        <xsd:attribute name="idDomainEntityCollection" type="xsd:string" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- DomainEntityCollection Moniker -->
+  <xsd:element name="domainEntityCollectionMoniker" type="DomainEntityCollectionMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="DomainEntityCollectionMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for DomainEntityCollection instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- DomainEntityHasDomainEntityProperties -->
+  <xsd:element name="domainEntityHasDomainEntityProperties" type="DomainEntityHasDomainEntityProperties" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="DomainEntityHasDomainEntityProperties">
+    <xsd:annotation>
+      <xsd:documentation>Embedding relationship between the Entity and EntityProperty</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end DomainEntityProperty -->
+          <xsd:element ref="domainEntityProperty" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- DomainEntityHasDomainEntityProperties Moniker -->
+  <xsd:element name="domainEntityHasDomainEntityPropertiesMoniker" type="DomainEntityHasDomainEntityPropertiesMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="DomainEntityHasDomainEntityPropertiesMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for DomainEntityHasDomainEntityProperties instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- DomainEntityHasPrimitiveProperties -->
+  <xsd:element name="domainEntityHasPrimitiveProperties" type="DomainEntityHasPrimitiveProperties" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="DomainEntityHasPrimitiveProperties">
+    <xsd:annotation>
+      <xsd:documentation>Embedding relationship between the Entity and PrimitiveProperty</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end PrimitiveProperty -->
+          <xsd:element ref="primitiveProperty" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- DomainEntityHasPrimitiveProperties Moniker -->
+  <xsd:element name="domainEntityHasPrimitivePropertiesMoniker" type="DomainEntityHasPrimitivePropertiesMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="DomainEntityHasPrimitivePropertiesMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for DomainEntityHasPrimitiveProperties instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- DomainEntityModelHasDomainEntities -->
+  <xsd:element name="domainEntityModelHasDomainEntities" type="DomainEntityModelHasDomainEntities" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="DomainEntityModelHasDomainEntities">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end DomainEntity -->
+          <xsd:element ref="domainEntity" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- DomainEntityModelHasDomainEntities Moniker -->
+  <xsd:element name="domainEntityModelHasDomainEntitiesMoniker" type="DomainEntityModelHasDomainEntitiesMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="DomainEntityModelHasDomainEntitiesMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for DomainEntityModelHasDomainEntities instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- DomainEntityModelHasDomainEntityCollections -->
+  <xsd:element name="domainEntityModelHasDomainEntityCollections" type="DomainEntityModelHasDomainEntityCollections" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="DomainEntityModelHasDomainEntityCollections">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end DomainEntityCollection -->
+          <xsd:element ref="domainEntityCollection" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- DomainEntityModelHasDomainEntityCollections Moniker -->
+  <xsd:element name="domainEntityModelHasDomainEntityCollectionsMoniker" type="DomainEntityModelHasDomainEntityCollectionsMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="DomainEntityModelHasDomainEntityCollectionsMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for DomainEntityModelHasDomainEntityCollections instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- DomainEntityReferencesTargetDomainEntities -->
+  <xsd:element name="domainEntityReferencesTargetDomainEntities" type="DomainEntityReferencesTargetDomainEntities" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="DomainEntityReferencesTargetDomainEntities">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end DomainEntity -->
+          <xsd:element ref="domainEntityMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- DomainEntityReferencesTargetDomainEntities Moniker -->
+  <xsd:element name="domainEntityReferencesTargetDomainEntitiesMoniker" type="DomainEntityReferencesTargetDomainEntitiesMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="DomainEntityReferencesTargetDomainEntitiesMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for DomainEntityReferencesTargetDomainEntities instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- DomainEntityReferencesDomainEntityCollections -->
+  <xsd:element name="domainEntityReferencesDomainEntityCollections" type="DomainEntityReferencesDomainEntityCollections" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="DomainEntityReferencesDomainEntityCollections">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end DomainEntityCollection -->
+          <xsd:element ref="domainEntityCollectionMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- DomainEntityReferencesDomainEntityCollections Moniker -->
+  <xsd:element name="domainEntityReferencesDomainEntityCollectionsMoniker" type="DomainEntityReferencesDomainEntityCollectionsMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="DomainEntityReferencesDomainEntityCollectionsMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for DomainEntityReferencesDomainEntityCollections instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+</xsd:schema>
+

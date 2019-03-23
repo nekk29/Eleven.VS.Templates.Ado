@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+	<TemplateData>
+		<Name>Application.MainModule</Name>
+		<Description>Project template for aplication main module project using n-layer architecture.</Description>
+		<Icon>Template.ico</Icon>
+		<ProjectType>CSharp</ProjectType>
+		<RequiredFrameworkVersion>4.0</RequiredFrameworkVersion>
+		<SortOrder>1000</SortOrder>
+		<TemplateID>C4A4D34C-6A34-461D-8D0A-98E702C58CBA</TemplateID>
+		<CreateNewFolder>false</CreateNewFolder>
+		<DefaultName>Application.MainModule</DefaultName>
+		<ProvideDefaultName>true</ProvideDefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<Project TargetFileName="$saferootprojectname$.Application.MainModule.csproj" File="ProjectTemplate.csproj" ReplaceParameters="true">
+			<ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+		</Project>
+	</TemplateContent>
+</VSTemplate>

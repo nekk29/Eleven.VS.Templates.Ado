@@ -1,0 +1,25 @@
+﻿<#@ template language="C#" inherits="Eleven.VS.Templates.Ado.Dsl.Util.CodeGeneratorBase" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="Eleven.VS.Templates.Ado.Package.TextTemplates.Helper" #>
+<#@ import namespace="Eleven.VS.Templates.Ado.Dsl.Util" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+CREATE PROCEDURE <#= TemplateHelperDatabase.Get_DataAccess_Delete_SPName(DomainEntity) #>
+<# PushIndent("    "); #>
+<#= TemplateHelperDatabase.Get_DataAccess_Parameters_StoreProcedure(DomainEntity, 0, true, false) #>
+<# PopIndent(); #>
+AS
+BEGIN
+<# PushIndent("    "); #>
+SET NOCOUNT ON
+
+DELETE FROM <#= TemplateHelperDatabase.Get_DataAccess_TableName(DomainEntity) #>
+WHERE
+<# PushIndent("    "); #>
+<#= TemplateHelperDatabase.Get_DataAccess_ColumnParameters_Where_StoreProcedure(DomainEntity, 0, true, false) #>
+<# PopIndent(); #>
+
+SET NOCOUNT OFF
+<# PopIndent(); #>
+END

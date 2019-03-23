@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{C11BBBF5-DE6C-4108-A6D1-98CCCBEAAE79}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Eleven.VS</RootNamespace>
+    <AssemblyName>Eleven.VS</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <GeneratePkgDefFile>false</GeneratePkgDefFile>
+    <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
+    <IncludeDebugSymbolsInVSIXContainer>false</IncludeDebugSymbolsInVSIXContainer>
+    <IncludeDebugSymbolsInLocalVSIXDeployment>false</IncludeDebugSymbolsInLocalVSIXDeployment>
+    <CreateVsixContainer>false</CreateVsixContainer>
+    <DeployExtension>false</DeployExtension>
+    <DeployVSTemplates>false</DeployVSTemplates>
+    <CopyVsixManifestToOutput>false</CopyVsixManifestToOutput>
+    <CopyBuildOutputToOutputDirectory>false</CopyBuildOutputToOutputDirectory>
+    <CopyOutputSymbolsToOutputDirectory>false</CopyOutputSymbolsToOutputDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.CoreUtility">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Application.Core\AssemblyInfo.cs" />
+    <Content Include="Application.MainModule\AssemblyInfo.cs" />
+    <Content Include="CrossCutting.Common\AssemblyInfo.cs" />
+    <Content Include="Data.Core\AssemblyInfo.cs" />
+    <Content Include="Data.MainModule\AssemblyInfo.cs" />
+    <Content Include="DistributedServices.Core\AssemblyInfo.cs" />
+    <Content Include="DistributedServices.MainModule\AssemblyInfo.cs" />
+    <Content Include="Domain.Core.Entities\AssemblyInfo.cs" />
+    <Content Include="Domain.Core\AssemblyInfo.cs" />
+    <Content Include="Domain.MainModule.Entities\AssemblyInfo.cs" />
+    <Content Include="Domain.MainModule\AssemblyInfo.cs" />
+    <Content Include="Modeling.Model\AssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Application.Core\Application.Core.vstemplate" />
+    <Content Include="Application.Core\ProjectTemplate.csproj" />
+    <Content Include="Application.Core\Template.ico" />
+    <Content Include="Application.MainModule\Application.MainModule.vstemplate" />
+    <Content Include="Application.MainModule\ProjectTemplate.csproj" />
+    <Content Include="Application.MainModule\Template.ico" />
+    <Content Include="CrossCutting.Common\CrossCutting.Common.vstemplate" />
+    <Content Include="CrossCutting.Common\ProjectTemplate.csproj" />
+    <Content Include="CrossCutting.Common\Template.ico" />
+    <Content Include="Data.Core\Data.Core.vstemplate" />
+    <Content Include="Data.Core\ProjectTemplate.csproj" />
+    <Content Include="Data.Core\Template.ico" />
+    <Content Include="Data.MainModule\Data.MainModule.vstemplate" />
+    <Content Include="Data.MainModule\ProjectTemplate.csproj" />
+    <Content Include="Data.MainModule\References\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="Data.MainModule\References\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+    <Content Include="Data.MainModule\References\Microsoft.Practices.ServiceLocation.dll" />
+    <Content Include="Data.MainModule\References\Microsoft.Practices.Unity.Configuration.dll" />
+    <Content Include="Data.MainModule\References\Microsoft.Practices.Unity.dll" />
+    <Content Include="Data.MainModule\References\Microsoft.Practices.Unity.Interception.Configuration.dll" />
+    <Content Include="Data.MainModule\References\Microsoft.Practices.Unity.Interception.dll" />
+    <Content Include="Data.MainModule\Template.ico" />
+    <Content Include="DataBase.Implementation\DataBase.Implementation.vstemplate" />
+    <Content Include="DataBase.Implementation\Objects_CreateDataBase.sql" />
+    <Content Include="DataBase.Implementation\Template.ico" />
+    <Content Include="DistributedServices.Core\DistributedServices.Core.vstemplate" />
+    <Content Include="DistributedServices.Core\ProjectTemplate.csproj" />
+    <Content Include="DistributedServices.Core\Template.ico" />
+    <Content Include="DistributedServices.MainModule\DistributedServices.MainModule.vstemplate" />
+    <Content Include="DistributedServices.MainModule\ProjectTemplate.csproj" />
+    <Content Include="DistributedServices.MainModule\Template.ico" />
+    <Content Include="Domain.Core.Entities\Domain.Core.Entities.vstemplate" />
+    <Content Include="Domain.Core.Entities\ProjectTemplate.csproj" />
+    <Content Include="Domain.Core.Entities\Template.ico" />
+    <Content Include="Domain.Core\Domain.Core.vstemplate" />
+    <Content Include="Domain.Core\ProjectTemplate.csproj" />
+    <Content Include="Domain.Core\Template.ico" />
+    <Content Include="Domain.MainModule.Entities\Domain.MainModule.Entities.vstemplate" />
+    <Content Include="Domain.MainModule.Entities\ProjectTemplate.csproj" />
+    <Content Include="Domain.MainModule.Entities\Template.ico" />
+    <Content Include="Domain.MainModule\Domain.MainModule.vstemplate" />
+    <Content Include="Domain.MainModule\ProjectTemplate.csproj" />
+    <Content Include="Domain.MainModule\Template.ico" />
+    <Content Include="Modeling.Model\Modeling.Model.vstemplate" />
+    <Content Include="Modeling.Model\ProjectTemplate.csproj" />
+    <Content Include="Modeling.Model\Template.ico" />
+    <Content Include="Eleven.VS.ico" />
+    <VSTemplate Include="Eleven.VS.vstemplate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data.MainModule\packages.config" />
+    <Content Include="DataBase.Implementation\ProjectTemplate.sqlproj" />
+    <None Include="Modeling.Model\domainentitymodel.elevenentitymodel" />
+    <Content Include="Modeling.Model\domainentitymodel.elevenentitymodel.diagram" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

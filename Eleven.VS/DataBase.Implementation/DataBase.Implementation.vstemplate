@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+	<TemplateData>
+		<Name>DataBase.Implementation</Name>
+		<Description>Project template for data base implementation project using n-layer architecture.</Description>
+		<Icon>Template.ico</Icon>
+		<ProjectType>CSharp</ProjectType>
+		<RequiredFrameworkVersion>4.0</RequiredFrameworkVersion>
+		<SortOrder>1000</SortOrder>
+		<TemplateID>47d29f09-c55e-4521-a667-814dd957afde</TemplateID>
+		<CreateNewFolder>false</CreateNewFolder>
+		<DefaultName>DataBase.Implementation</DefaultName>
+		<ProvideDefaultName>true</ProvideDefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<Project TargetFileName="$saferootprojectname$.DataBase.Implementation.sqlproj" File="ProjectTemplate.sqlproj" ReplaceParameters="true">
+			<ProjectItem ReplaceParameters="true" TargetFileName="Objects_CreateDataBase.sql">Objects_CreateDataBase.sql</ProjectItem>
+		</Project>
+	</TemplateContent>
+</VSTemplate>

@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<domainEntityModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="e09a2b42-d80c-4cb8-9cf3-5a203bcc111a" domainEntityNamespace=".Domain.Core.Entities" dataBaseImplementationNamespace=".DataBase.Implementation" dataAccessNamespace=".Data.MainModule" crossCuttingNamespace=".CrossCutting.Common" xmlns="http://schemas.microsoft.com/dsltools/NLayerDSLTools" />
