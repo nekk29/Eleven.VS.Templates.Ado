@@ -53,8 +53,21 @@
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Stored Procedures\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Objects_CreateDataBase.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Security\dbo.sql" />
+    <None Include="dbo\Tables\Usuario.sql" />
+    <None Include="dbo\Stored Procedures\Usp_Ins_Usuario.sql" />
+    <None Include="dbo\Stored Procedures\Usp_Upd_Usuario.sql" />
+    <None Include="dbo\Stored Procedures\Usp_Del_Usuario.sql" />
+    <None Include="dbo\Stored Procedures\Usp_Sel_Usuario_ById.sql" />
+    <None Include="dbo\Stored Procedures\Usp_Sel_Usuario.sql" />
   </ItemGroup>
 </Project>

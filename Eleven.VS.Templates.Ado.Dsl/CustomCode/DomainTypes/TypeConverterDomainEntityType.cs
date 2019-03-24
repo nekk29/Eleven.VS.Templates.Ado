@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.Modeling;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Eleven.VS.Templates.Ado.Dsl.CustomCode.DomainTypes
+namespace Eleven.VS.Templates.Ado.Dsl.DomainTypes
 {
     public class DomainEntityType_TypeConverter : BaseTypeConverter
     {

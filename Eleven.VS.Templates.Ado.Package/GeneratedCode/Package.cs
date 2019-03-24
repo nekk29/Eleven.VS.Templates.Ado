@@ -27,37 +27,37 @@ namespace Eleven.VS.Templates.Ado.Dsl
 	[VSShell::PackageRegistration(RegisterUsing = VSShell::RegistrationMethod.Assembly, UseManagedResourcesOnly = true)]
 	[VSShell::ProvideToolWindow(typeof(ElevenEntityModelExplorerToolWindow), MultiInstances = false, Style = VSShell::VsDockStyle.Tabbed, Orientation = VSShell::ToolWindowOrientation.Right, Window = "{3AE79031-E1BC-11D0-8F78-00A0C9110057}")]
 	[VSShell::ProvideToolWindowVisibility(typeof(ElevenEntityModelExplorerToolWindow), Constants.ElevenEntityModelEditorFactoryId)]
-	[VSShell::ProvideStaticToolboxGroup("@Eleven Entity ModelToolboxTab;Eleven.VS.Templates.Ado.Dsl.Dsl.dll", "Eleven.VS.Templates.Ado.Dsl.Eleven Entity ModelToolboxTab")]
+	[VSShell::ProvideStaticToolboxGroup("@Eleven Entity ModelToolboxTab;Eleven.VS.Templates.Ado.Dsl.dll", "Eleven.VS.Templates.Ado.Dsl.Eleven Entity ModelToolboxTab")]
 	[VSShell::ProvideStaticToolboxItem("Eleven.VS.Templates.Ado.Dsl.Eleven Entity ModelToolboxTab",
-					"@EntityToolToolboxItem;Eleven.VS.Templates.Ado.Dsl.Dsl.dll", 
+					"@EntityToolToolboxItem;Eleven.VS.Templates.Ado.Dsl.dll", 
 					"Eleven.VS.Templates.Ado.Dsl.EntityToolToolboxItem", 
 					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
 					"EntityShapeClassF1Keyword", 
-					"@EntityToolToolboxBitmap;Eleven.VS.Templates.Ado.Dsl.Dsl.dll", 
+					"@EntityToolToolboxBitmap;Eleven.VS.Templates.Ado.Dsl.dll", 
 					0xff00ff,
 					Index = 0)]
 	[VSShell::ProvideStaticToolboxItem("Eleven.VS.Templates.Ado.Dsl.Eleven Entity ModelToolboxTab",
-					"@EntityConnectorToolToolboxItem;Eleven.VS.Templates.Ado.Dsl.Dsl.dll", 
+					"@EntityConnectorToolToolboxItem;Eleven.VS.Templates.Ado.Dsl.dll", 
 					"Eleven.VS.Templates.Ado.Dsl.EntityConnectorToolToolboxItem", 
 					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
 					"EntityConnectorClassF1Keyword", 
-					"@EntityConnectorToolToolboxBitmap;Eleven.VS.Templates.Ado.Dsl.Dsl.dll", 
+					"@EntityConnectorToolToolboxBitmap;Eleven.VS.Templates.Ado.Dsl.dll", 
 					0xff00ff,
 					Index = 1)]
 	[VSShell::ProvideStaticToolboxItem("Eleven.VS.Templates.Ado.Dsl.Eleven Entity ModelToolboxTab",
-					"@EntityCollectionConnectorToolToolboxItem;Eleven.VS.Templates.Ado.Dsl.Dsl.dll", 
+					"@EntityCollectionConnectorToolToolboxItem;Eleven.VS.Templates.Ado.Dsl.dll", 
 					"Eleven.VS.Templates.Ado.Dsl.EntityCollectionConnectorToolToolboxItem", 
 					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
 					"EntityCollectionConnectorClassF1Keyword", 
-					"@EntityCollectionConnectorToolToolboxBitmap;Eleven.VS.Templates.Ado.Dsl.Dsl.dll", 
+					"@EntityCollectionConnectorToolToolboxBitmap;Eleven.VS.Templates.Ado.Dsl.dll", 
 					0xff00ff,
 					Index = 2)]
 	[VSShell::ProvideStaticToolboxItem("Eleven.VS.Templates.Ado.Dsl.Eleven Entity ModelToolboxTab",
-					"@EntityCollectionToolToolboxItem;Eleven.VS.Templates.Ado.Dsl.Dsl.dll", 
+					"@EntityCollectionToolToolboxItem;Eleven.VS.Templates.Ado.Dsl.dll", 
 					"Eleven.VS.Templates.Ado.Dsl.EntityCollectionToolToolboxItem", 
 					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
 					"EntityCollectionShapeClassF1Keyword", 
-					"@EntityCollectionToolToolboxBitmap;Eleven.VS.Templates.Ado.Dsl.Dsl.dll", 
+					"@EntityCollectionToolToolboxBitmap;Eleven.VS.Templates.Ado.Dsl.dll", 
 					0xff00ff,
 					Index = 3)]
 	[VSShell::ProvideEditorFactory(typeof(ElevenEntityModelEditorFactory), 103, TrustLevel = VSShellInterop::__VSEDITORTRUSTLEVEL.ETL_AlwaysTrusted)]

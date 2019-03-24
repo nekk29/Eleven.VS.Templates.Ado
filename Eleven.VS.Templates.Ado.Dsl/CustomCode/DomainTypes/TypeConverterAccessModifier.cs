@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.Modeling;
 using System.Collections.Generic;
 
-namespace Eleven.VS.Templates.Ado.Dsl.CustomCode.DomainTypes
+namespace Eleven.VS.Templates.Ado.Dsl.DomainTypes
 {
     public class DomainEntity_AccessModifier_TypeConverter : BaseTypeConverter
     {

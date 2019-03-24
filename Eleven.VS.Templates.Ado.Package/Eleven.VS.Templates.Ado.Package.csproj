@@ -199,6 +199,7 @@
     <None Include="GeneratedCode\Constants.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Constants.cs</LastGenOutput>
+      <CustomToolNamespace>Eleven.VS.Templates.Ado.Package</CustomToolNamespace>
     </None>
     <Compile Include="GeneratedCode\Constants.cs">
       <AutoGen>True</AutoGen>
@@ -208,6 +209,7 @@
     <None Include="GeneratedCode\DocData.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>DocData.cs</LastGenOutput>
+      <CustomToolNamespace>Eleven.VS.Templates.Ado.Package</CustomToolNamespace>
     </None>
     <Compile Include="GeneratedCode\DocData.cs">
       <AutoGen>True</AutoGen>
@@ -217,6 +219,7 @@
     <None Include="GeneratedCode\DocView.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>DocView.cs</LastGenOutput>
+      <CustomToolNamespace>Eleven.VS.Templates.Ado.Package</CustomToolNamespace>
     </None>
     <Compile Include="GeneratedCode\DocView.cs">
       <AutoGen>True</AutoGen>
@@ -242,6 +245,7 @@
     <None Include="GeneratedCode\ModelExplorer.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ModelExplorer.cs</LastGenOutput>
+      <CustomToolNamespace>Eleven.VS.Templates.Ado.Package</CustomToolNamespace>
     </None>
     <Compile Include="GeneratedCode\Package.cs">
       <AutoGen>True</AutoGen>
@@ -252,10 +256,12 @@
     <None Include="GeneratedCode\EditorFactory.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>EditorFactory.cs</LastGenOutput>
+      <CustomToolNamespace>Eleven.VS.Templates.Ado.Package</CustomToolNamespace>
     </None>
     <None Include="GeneratedCode\ModelExplorerToolWindow.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ModelExplorerToolWindow.cs</LastGenOutput>
+      <CustomToolNamespace>Eleven.VS.Templates.Ado.Package</CustomToolNamespace>
     </None>
     <None Include="GeneratedCode\Package.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -272,6 +278,10 @@
       <IncludeOutputGroupsInVSIXLocalOnly>
         DebugSymbolsProjectOutputGroup;
       </IncludeOutputGroupsInVSIXLocalOnly>
+    </ProjectReference>
+    <ProjectReference Include="..\Eleven.VS.Templates.Ado.Util\Eleven.VS.Templates.Ado.Util.csproj">
+      <Project>{f2ea0158-9e18-45cf-9f08-def19af7fbf5}</Project>
+      <Name>Eleven.VS.Templates.Ado.Util</Name>
     </ProjectReference>
     <ProjectReference Include="..\Eleven.VS.Templates.Ado.Wizard\Eleven.VS.Templates.Ado.Wizard.csproj">
       <Project>{0a523990-aebe-4126-98c9-4dc55c2c370e}</Project>
@@ -302,12 +312,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CSharp.tt</DependentUpon>
     </VSItemTemplate>
-    <VSItemTemplate Include="ProjectItemTemplates\VisualBasic.vstemplate">
-      <OutputName>ElevenEntityModel</OutputName>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>VisualBasic.tt</DependentUpon>
-    </VSItemTemplate>
     <None Include="Resources\File.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -320,10 +324,12 @@
     <None Include="GeneratedCode\CommandSet.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>CommandSet.cs</LastGenOutput>
+      <CustomToolNamespace>Eleven.VS.Templates.Ado.Package</CustomToolNamespace>
     </None>
     <None Include="GeneratedCode\GeneratedVSCT.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>GeneratedVSCT.vsct</LastGenOutput>
+      <CustomToolNamespace>Eleven.VS.Templates.Ado.Package</CustomToolNamespace>
     </None>
     <None Include="GeneratedCode\GeneratedVSCT.vsct">
       <AutoGen>True</AutoGen>
@@ -336,10 +342,6 @@
     </None>
     <None Include="ProjectItemTemplates\elevenentitymodel.elevenentitymodel" />
     <None Include="ProjectItemTemplates\elevenentitymodel.diagram" />
-    <None Include="ProjectItemTemplates\VisualBasic.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>VisualBasic.vstemplate</LastGenOutput>
-    </None>
   </ItemGroup>
   <PropertyGroup>
     <StartProgram>$(DevEnvDir)\devenv.exe</StartProgram>

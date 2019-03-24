@@ -68,6 +68,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsuarioDataAccess.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Company.Module.Data.Core\Company.Module.Data.Core.csproj">
+      <Project>{bd78a3d8-ffab-4e7b-aa45-2cf897c6efb9}</Project>
+      <Name>Company.Module.Data.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Company.Module.Domain.Core.Entities\Company.Module.Domain.Core.Entities.csproj">
+      <Project>{73b2958d-647f-4bcb-bf87-a8d6b8c2a9f9}</Project>
+      <Name>Company.Module.Domain.Core.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="References\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="References\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+    <Content Include="References\Microsoft.Practices.ServiceLocation.dll" />
+    <Content Include="References\Microsoft.Practices.Unity.Configuration.dll" />
+    <Content Include="References\Microsoft.Practices.Unity.dll" />
+    <Content Include="References\Microsoft.Practices.Unity.Interception.Configuration.dll" />
+    <Content Include="References\Microsoft.Practices.Unity.Interception.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.Modeling;
 using System;
 using System.Collections.Generic;
 
-namespace Eleven.VS.Templates.Ado.Dsl.CustomCode.DomainTypes
+namespace Eleven.VS.Templates.Ado.Dsl.DomainTypes
 {
     public class ProjectImplementation_TypeConverter : BaseTypeConverter
     {

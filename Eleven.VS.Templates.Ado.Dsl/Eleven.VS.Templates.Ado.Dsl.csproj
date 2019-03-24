@@ -101,6 +101,7 @@
     <None Include="GeneratedCode\SerializationHelper.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>SerializationHelper.cs</LastGenOutput>
+      <CustomToolNamespace>Eleven.VS.Templates.Ado.Dsl</CustomToolNamespace>
     </None>
     <Compile Include="CustomRules\DomainClasses\DomainEntityCollectionRules.cs" />
     <Compile Include="CustomRules\DomainClasses\DomainEntityPropertyRules.cs" />
@@ -196,18 +197,22 @@
     <None Include="GeneratedCode\ConnectionBuilders.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ConnectionBuilders.cs</LastGenOutput>
+      <CustomToolNamespace>Eleven.VS.Templates.Ado.Dsl</CustomToolNamespace>
     </None>
     <None Include="GeneratedCode\Diagram.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Diagram.cs</LastGenOutput>
+      <CustomToolNamespace>Eleven.VS.Templates.Ado.Dsl</CustomToolNamespace>
     </None>
     <None Include="GeneratedCode\DirectiveProcessor.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>DirectiveProcessor.cs</LastGenOutput>
+      <CustomToolNamespace>Eleven.VS.Templates.Ado.Dsl</CustomToolNamespace>
     </None>
     <None Include="GeneratedCode\DomainRelationships.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>DomainRelationships.cs</LastGenOutput>
+      <CustomToolNamespace>Eleven.VS.Templates.Ado.Dsl</CustomToolNamespace>
     </None>
     <None Include="DslDefinition.dsl">
       <SubType>Designer</SubType>
@@ -215,34 +220,42 @@
     <None Include="GeneratedCode\Connectors.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Connectors.cs</LastGenOutput>
+      <CustomToolNamespace>Eleven.VS.Templates.Ado.Dsl</CustomToolNamespace>
     </None>
     <None Include="GeneratedCode\DomainClasses.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>DomainClasses.cs</LastGenOutput>
+      <CustomToolNamespace>Eleven.VS.Templates.Ado.Dsl</CustomToolNamespace>
     </None>
     <None Include="GeneratedCode\DomainModelResx.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>DomainModelResx.resx</LastGenOutput>
+      <CustomToolNamespace>Eleven.VS.Templates.Ado.Dsl</CustomToolNamespace>
     </None>
     <None Include="GeneratedCode\HelpKeywordHelper.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>HelpKeywordHelper.cs</LastGenOutput>
+      <CustomToolNamespace>Eleven.VS.Templates.Ado.Dsl</CustomToolNamespace>
     </None>
     <None Include="GeneratedCode\MultiplicityValidation.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>MultiplicityValidation.cs</LastGenOutput>
+      <CustomToolNamespace>Eleven.VS.Templates.Ado.Dsl</CustomToolNamespace>
     </None>
     <None Include="GeneratedCode\PropertiesGrid.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>PropertiesGrid.cs</LastGenOutput>
+      <CustomToolNamespace>Eleven.VS.Templates.Ado.Dsl</CustomToolNamespace>
     </None>
     <None Include="GeneratedCode\ElevenEntityModelSchema.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ElevenEntityModelSchema.xsd</LastGenOutput>
+      <CustomToolNamespace>Eleven.VS.Templates.Ado.Dsl</CustomToolNamespace>
     </None>
     <None Include="GeneratedCode\DomainModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>DomainModel.cs</LastGenOutput>
+      <CustomToolNamespace>Eleven.VS.Templates.Ado.Dsl</CustomToolNamespace>
     </None>
     <Content Include="GeneratedCode\ElevenEntityModelSchema.xsd">
       <AutoGen>True</AutoGen>
@@ -255,14 +268,17 @@
     <None Include="GeneratedCode\Serializer.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Serializer.cs</LastGenOutput>
+      <CustomToolNamespace>Eleven.VS.Templates.Ado.Dsl</CustomToolNamespace>
     </None>
     <None Include="GeneratedCode\Shapes.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Shapes.cs</LastGenOutput>
+      <CustomToolNamespace>Eleven.VS.Templates.Ado.Dsl</CustomToolNamespace>
     </None>
     <None Include="GeneratedCode\ToolboxHelper.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ToolboxHelper.cs</LastGenOutput>
+      <CustomToolNamespace>Eleven.VS.Templates.Ado.Dsl</CustomToolNamespace>
     </None>
   </ItemGroup>
   <ItemGroup>

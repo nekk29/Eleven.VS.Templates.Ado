@@ -1,1 +1,23 @@
-﻿
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ElevenEntityModelDiagram dslVersion="1.0.0.0" Id="4c4ad57b-0c42-41fa-800c-3ef97a657584" absoluteBounds="0, 0, 11, 8.5" name="domainentitymodel">
+  <domainEntityModelMoniker Id="e09a2b42-d80c-4cb8-9cf3-5a203bcc111a" />
+  <nestedChildShapes>
+    <entityCompartmentShape Id="2b07e6ef-6a88-4575-81bc-775f5e9ae645" absoluteBounds="0.5, 0.5, 2, 2.457190755208333">
+      <domainEntityMoniker name="/e09a2b42-d80c-4cb8-9cf3-5a203bcc111a/Usuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5d1f0aa4-d776-4bd0-b749-104cfeee1790" absoluteBounds="0.5149999999999999, 0.81, 1.9700000000000002, 1.7878011067708333" name="PrimitiveProperties" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="6ef56bcc-c49c-49ca-a49d-fc9c56acc02e" absoluteBounds="0.5149999999999999, 2.6078011067708329, 1.9700000000000002, 0.2493896484375" name="EntityProperties" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </entityCompartmentShape>
+    <entityCollectionShape Id="35cd07f0-74fe-4c50-b145-d2dd26da1577" absoluteBounds="3.75, 0.5, 2, 0.5">
+      <domainEntityCollectionMoniker Id="f994004a-9384-438a-8ce2-37a1700fd695" />
+    </entityCollectionShape>
+    <entityCollectionConector Id="3e179f15-8917-4dc4-9601-382b19f96e8e" edgePoints="[(2.5 : 0.75); (3.75 : 0.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <domainEntityReferencesDomainEntityCollectionsMoniker Id="bb3706fe-5fde-4289-85c1-a69ffc5388f6" />
+      <nodes>
+        <entityCompartmentShapeMoniker Id="2b07e6ef-6a88-4575-81bc-775f5e9ae645" />
+        <entityCollectionShapeMoniker Id="35cd07f0-74fe-4c50-b145-d2dd26da1577" />
+      </nodes>
+    </entityCollectionConector>
+  </nestedChildShapes>
+</ElevenEntityModelDiagram>

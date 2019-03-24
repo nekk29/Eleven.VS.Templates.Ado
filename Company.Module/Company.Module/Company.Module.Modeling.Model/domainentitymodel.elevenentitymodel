@@ -1,2 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<domainEntityModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="e09a2b42-d80c-4cb8-9cf3-5a203bcc111a" domainEntityNamespace=".Domain.Core.Entities" dataBaseImplementationNamespace=".DataBase.Implementation" dataAccessNamespace=".Data.MainModule" crossCuttingNamespace=".CrossCutting.Common" xmlns="http://schemas.microsoft.com/dsltools/NLayerDSLTools" />
+<domainEntityModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="e09a2b42-d80c-4cb8-9cf3-5a203bcc111a" projectImplementationDatabase="Company.Module.DataBase.Implementation" projectImplementationDataAccess="Company.Module.Data.MainModule" projectImplementationEntity="Company.Module.Domain.Core.Entities" projectImplementationDomain="Company.Module.Domain.Core" projectImplementationDataAccessCore="Company.Module.Data.Core" xmlns="http://schemas.microsoft.com/dsltools/ElevenEntityModel">
+  <domainEntities>
+    <domainEntityModelHasDomainEntities Id="15af843f-d614-409b-a7b8-2353d914e08a">
+      <domainEntity Id="fcf48322-59b6-461c-89bd-797b9074d719" name="Usuario" dataAccessTable="Usuario" idDomainEntity="00004">
+        <primitiveProperties>
+          <domainEntityHasPrimitiveProperties Id="4a5f8933-01f7-4354-b1e1-9c100f3812c3">
+            <primitiveProperty Id="03c1bd20-5838-41cf-87cd-18bb73151435" primitiveType="System.Int32" name="IdUsuario" dataAccessColumn="IdUsuario" dataAccessType="INT" isPrimaryKey="true" />
+          </domainEntityHasPrimitiveProperties>
+          <domainEntityHasPrimitiveProperties Id="f6c0b98d-38c8-435f-8424-f1e13ac6b282">
+            <primitiveProperty Id="176e066f-e448-4a27-950a-e008d28904da" name="UserName" dataAccessColumn="UserName" dataAccessType="NVARCHAR (64) " />
+          </domainEntityHasPrimitiveProperties>
+          <domainEntityHasPrimitiveProperties Id="a5fa7ea2-b34a-4aba-8745-13ed144bd1ec">
+            <primitiveProperty Id="5fb98928-7434-4963-9d79-fde216354632" name="Password" dataAccessColumn="Password" dataAccessType="NVARCHAR (256)" />
+          </domainEntityHasPrimitiveProperties>
+          <domainEntityHasPrimitiveProperties Id="96067445-122b-477d-a446-db2eb0745862">
+            <primitiveProperty Id="34606ec5-4533-436c-a082-298614811a6b" name="CreationUser" dataAccessColumn="CreationUser" dataAccessType="NVARCHAR (64) " />
+          </domainEntityHasPrimitiveProperties>
+          <domainEntityHasPrimitiveProperties Id="1e8e653d-9cbc-4ec8-80ad-f967f6885093">
+            <primitiveProperty Id="df0c9c56-649f-446e-8c25-58d94b4b4162" primitiveType="System.DateTime" name="CreationDate" dataAccessColumn="CreationDate" dataAccessType="DATETIME" />
+          </domainEntityHasPrimitiveProperties>
+          <domainEntityHasPrimitiveProperties Id="e613fe67-798b-4d71-bbdf-090b2ed9db45">
+            <primitiveProperty Id="5b07f8bc-6b5a-465a-b3d2-9c7027ca3f17" name="UpdateUser" dataAccessColumn="UpdateUser" dataAccessType="NVARCHAR (64) " />
+          </domainEntityHasPrimitiveProperties>
+          <domainEntityHasPrimitiveProperties Id="a0f2ea7b-4152-4f75-a504-f7cbf06f9994">
+            <primitiveProperty Id="87d48301-2735-4b2a-9133-268bcd2e1a7a" primitiveType="System.DateTime" name="UpdateDate" dataAccessColumn="UpdateDate" dataAccessType="DATETIME" />
+          </domainEntityHasPrimitiveProperties>
+          <domainEntityHasPrimitiveProperties Id="2a3e331d-ea9f-4b44-b3b2-09b0dfa5e6e5">
+            <primitiveProperty Id="8ec3033d-c42e-4257-a9fe-26fae7079ac5" primitiveType="System.Boolean" name="Active" dataAccessColumn="Active" dataAccessType="BIT" />
+          </domainEntityHasPrimitiveProperties>
+        </primitiveProperties>
+        <domainEntityCollections>
+          <domainEntityReferencesDomainEntityCollections Id="bb3706fe-5fde-4289-85c1-a69ffc5388f6">
+            <domainEntityCollectionMoniker Id="f994004a-9384-438a-8ce2-37a1700fd695" />
+          </domainEntityReferencesDomainEntityCollections>
+        </domainEntityCollections>
+      </domainEntity>
+    </domainEntityModelHasDomainEntities>
+  </domainEntities>
+  <domainEntityCollections>
+    <domainEntityModelHasDomainEntityCollections Id="512047d1-48bb-469e-966b-66ed94479497">
+      <domainEntityCollection Id="f994004a-9384-438a-8ce2-37a1700fd695" name="UsuarioList" domainEntityType="Usuario" idDomainEntityCollection="00004" />
+    </domainEntityModelHasDomainEntityCollections>
+  </domainEntityCollections>
+</domainEntityModel>

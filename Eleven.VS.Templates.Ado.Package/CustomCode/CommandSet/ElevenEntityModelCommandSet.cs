@@ -1,5 +1,4 @@
-﻿using Eleven.VS.Templates.Ado.Dsl;
-using Eleven.VS.Templates.Ado.Package.CodeGenerators;
+﻿using Eleven.VS.Templates.Ado.Package.CodeGenerators;
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Shell;
 using System;
@@ -7,18 +6,13 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel.Design;
 
-namespace Eleven.VS.Templates.Ado.Package
+namespace Eleven.VS.Templates.Ado.Dsl
 {
     internal partial class ElevenEntityModelCommandSet : ElevenEntityModelCommandSetBase
     {
         private Guid guidNLayerDSLToolsCmdSet = new Guid("55D35A6F-AA65-4A0E-B022-761F59DDD30A");
         private const int cmdidNLayerDSLToolsGenerateMenuCommand = 0x0200;
-
-        public ElevenEntityModelCommandSet(IServiceProvider serviceProvider) : base(serviceProvider)
-        {
-
-        }
-
+        
         protected override IList<MenuCommand> GetMenuCommands()
         {
             IList<MenuCommand> commands = base.GetMenuCommands();
